@@ -1,5 +1,7 @@
 # Tutorial 1: Synapse Basics
 
+In this tutorial we're going to learn about Synapse and it's most basic features.
+
 ## Getting an account
 
 ## Taking the quiz so you can upload
