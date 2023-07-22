@@ -23,6 +23,11 @@ You need to become a "certified" user.  You can do this by taking the quiz [here
 
 <img width="1431" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/0b19c08b-68ee-4fc5-886d-80749a0814ee">
 
+The quiz is just 15 questions and should take < 15 min.
+
+<img width="1431" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/1809b51a-e6d9-4048-88ce-5d3ce2204d2e">
+
+
 
 ## Creating your first project
 
@@ -56,6 +61,17 @@ You can see Challengs you've joined here:
 
 <img width="1431" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/df30f8d4-dce8-4eed-a740-29ed58a7afe3">
 
+### Download Cart
+
+This is where you can collect data files on Synapse that you'd like to download.  It helps you organize your access requests for data that is controlled access as well.
+
+<img width="1431" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/1118fc68-dce4-4ce4-996a-640ef2620089">
+
+### Search
+
+Allows you to find projects, files, datasets, etc of interest.
+
+<img width="1431" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/1eccfb6c-48aa-4e87-9b84-5253faf4ae41">
 
 ## Adding wiki space content
 
