@@ -27,16 +27,6 @@ The quiz is just 15 questions and should take < 15 min.
 
 <img width="1431" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/1809b51a-e6d9-4048-88ce-5d3ce2204d2e">
 
-
-
-## Creating your first project
-
-You will be dropped into your projects page, you'll see it's empty to start with.
-
-Synapse projects are the main "containers" for information in Synapse.  They are workspaces where you can store data and share with other collaborators.  They start out as private and sharable with any other Synapse user but can, ultiamtely, be made public when it's time to share your results with the wider community.  
-
-<img width="1431" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/ed7cf758-59f1-40d2-aea8-ed3e1803491f">
-
 ## Exploring Synapse
 
 ### Favorites
@@ -73,7 +63,21 @@ Allows you to find projects, files, datasets, etc of interest.
 
 <img width="1431" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/1eccfb6c-48aa-4e87-9b84-5253faf4ae41">
 
+## Creating your first project
+
+You will be dropped into your projects page, you'll see it's empty to start with.
+
+Synapse projects are the main "containers" for information in Synapse.  They are workspaces where you can store data and share with other collaborators.  They start out as private and sharable with any other Synapse user but can, ultiamtely, be made public when it's time to share your results with the wider community.  
+
+<img width="1431" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/ed7cf758-59f1-40d2-aea8-ed3e1803491f">
+
+Click create project, name it, and you'll be taken to the new project page:
+
+<img width="1431" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/54ba2c99-4458-4b23-add0-c1073a657d7b">
+
 ## Adding wiki space content
+
+
 
 ## Uploading some files
 
