@@ -77,6 +77,39 @@ Click create project, name it, and you'll be taken to the new project page:
 
 ## Adding wiki space content
 
+You can add content to your project in the form of wiki pages.  These are written in a simple language called Markdown and allow you to create complex web pages containing graphics and tables using a simple syntax.
+
+Start by clicking on the pencil icon to edit the wiki page.  You can then put in the following content:
+
+```
+## Test Project
+
+This project space is a test
+
+You can use simple formatting to make text **bold**, _italics_, or ~~strikethrough~~
+
+You can make:
+
+* bulleted lists
+
+You can make:
+
+0. numeric lists
+
+You can even make tables:
+
+| First Header  | Second Header |
+| ------------- | ------------- |
+| Content Cell  | Content Cell  |
+| Content Cell  | Content Cell  |
+
+Finally, you can make links, for example, here's more information on the [Markdown](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax) language.
+
+```
+
+You can see the result of this nicely formated when you save:
+
+<img width="1192" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/f47d186d-e7fb-4f88-9305-1a35353332da">
 
 
 ## Uploading some files
@@ -91,5 +124,7 @@ Click create project, name it, and you'll be taken to the new project page:
 
 ## Publishing
 
+- Mint a DOI
+- make the data public 
 - DOI
 - public data 
