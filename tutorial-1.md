@@ -127,6 +127,19 @@ You'll now see a new page (in this case "Testing Page 2") appear in a navigation
 
 ## Uploading some files
 
+At its core, Synapse is a data sharing platform and the majority data is in the form of files.  You can think of Synapse as a DropBox or Google Drive but focused on the needs of researchers.  Because of that, the platform is focused on what you need for publishing on research results, namely provenance and DOI minting.  Provenance means you can upload a file and then update it with a new version, all while maintaing the history.  DOIs are unique identifiers commonly used in publications to refer to data in a durable way.  You can create DOIs in the Synapse platform for free and these can be made for individual files or whole project spaces.
+
+Let's get started by uploading data...
+
+We'll start simple with the drag and drop interface.
+
+Things to think about:
+- there is no upper limit of data you can upload but generally we ask you to upload <100GB when using our free accounts
+- if you upload lots of data to our platform and then never access it, it might be moved to slower storage
+- you can add annotations on files
+- we use AWS in us-east-1 (east coast of the US) by default
+- if you want to, you can "bring your own bucket".  This lets you own the storage yourself while managing it within Synapse.  Really useful if you want to store a lot more than 100GB of data on the cloud and need to control it's location (e.g. Google, AWS, in a partiuclar region).  Downside is it requires knowledge of how to set this up in the cloud and your own cloud account.
+
 ## Sharing with others 
 
 ## Uploading new versions of files
@@ -140,4 +153,18 @@ You'll now see a new page (in this case "Testing Page 2") appear in a navigation
 - Mint a DOI
 - make the data public 
 - DOI
-- public data 
+- public data
+
+# Tutorial 2
+
+Programmatic access
+
+## Setting up Mybinder.org
+
+## Logging in
+
+## Upload 
+
+## Download
+
+## Graph something 
