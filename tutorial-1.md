@@ -149,16 +149,26 @@ When it finishes uploading, click on the file and you'll get a bunch of informat
 
 <img width="1311" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/17b53db2-39a8-4247-826b-ce294e282da4">
 
-LEFT OFF HERE
-
 Things to think about:
 - there is no upper limit of data you can upload but generally we ask you to upload <100GB when using our free accounts
 - if you upload lots of data to our platform and then never access it, it might be moved to slower storage
 - you can add annotations on files
 - we use AWS in us-east-1 (east coast of the US) by default
-- if you want to, you can "bring your own bucket".  This lets you own the storage yourself while managing it within Synapse.  Really useful if you want to store a lot more than 100GB of data on the cloud and need to control it's location (e.g. Google, AWS, in a partiuclar region).  Downside is it requires knowledge of how to set this up in the cloud and your own cloud account.
+- if you want to, you can "bring your own bucket".  This lets you own the storage yourself while managing it within Synapse.  Really useful if you want to store a lot more than 100GB of data on the cloud and need to control it's location (e.g. Google, AWS, in a partiuclar region).  Downside is it requires knowledge of how to set this up in the cloud and your own cloud account which not everyone has.
 
 ## Sharing with others 
+
+So by this point you've created your Synapse project, you've added some documentation in the form of a wiki, and you uploaded a file.  Now it's time to share the project with another Synapse user so you can collaborate.
+
+You'll start by clicking the "Project Tools" button on the project main page:
+
+<img width="1311" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/12ccb9d4-91da-4172-86b4-af44638c6118">
+
+Then click on "Project Sharing Settings", you see this dialog box:
+
+<img width="1311" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/b2153464-4420-4624-bb42-0921d16fb183">
+
+
 
 ## Uploading new versions of files
 
