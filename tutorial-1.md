@@ -133,6 +133,22 @@ Let's get started by uploading data...
 
 We'll start simple with the drag and drop interface.
 
+Start by clicking the upload arrow:
+
+<img width="1311" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/21d1712b-82cf-4718-89dd-bf38593dc877">
+
+You'll see an interface like the above.  Pick a file on your compute and try uploading it by dragging the file to the upload area.
+
+In this case I uploaded a simple index.html file
+
+<img width="1311" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/e5be0815-9f6a-415d-b00b-abc63ce71e56">
+
+When it finishes uploading, click on the file and you'll get a bunch of information
+
+<img width="1311" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/17b53db2-39a8-4247-826b-ce294e282da4">
+
+LEFT OFF HERE
+
 Things to think about:
 - there is no upper limit of data you can upload but generally we ask you to upload <100GB when using our free accounts
 - if you upload lots of data to our platform and then never access it, it might be moved to slower storage
