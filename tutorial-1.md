@@ -121,6 +121,8 @@ You'll now see a new page (in this case "Testing Page 2") appear in a navigation
 
 <img width="1259" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/9b458883-6e74-4e60-a738-b8ec0f3300ba">
 
+> [!NOTE]  
+> Highlights information that users should take into 
 
 ## Uploading some files
 
