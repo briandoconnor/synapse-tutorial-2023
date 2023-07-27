@@ -111,6 +111,16 @@ You can see the result of this nicely formated when you save:
 
 <img width="1192" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/f47d186d-e7fb-4f88-9305-1a35353332da">
 
+The Synapse project space is much more than a single page.  You can create a bunch of different pages, useful if your trying to organize your research results in distinct topics or collaborate with others on different parts of a project.  
+
+To create another page, click the "Wiki Tools" button and then click "Add Wiki Subpage":
+
+<img width="1192" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/fa98cbd8-8ebe-48db-90a8-b14916002ddb">
+
+You'll now see a new page (in this case "Testing Page 2") appear in a navigation bar on the left.  In this way you can create multiple pages nested under each other, creating a potentially complex collection of pages with their own respective content.
+
+<img width="1259" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/9b458883-6e74-4e60-a738-b8ec0f3300ba">
+
 
 ## Uploading some files
 
