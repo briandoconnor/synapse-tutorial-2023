@@ -168,9 +168,50 @@ Then click on "Project Sharing Settings", you see this dialog box:
 
 <img width="1311" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/b2153464-4420-4624-bb42-0921d16fb183">
 
+Now it's time to turn to your neighbor and ask them for their Synapse ID!  You can then add them to your project, try giving them the ability to download and upload to your project.  In this image I've added my other Synapse account (briandoconnor) to my project:
 
+<img width="1311" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/05f15ba5-d62b-4dbc-a0ef-61f054e425d3">
+
+You can add as many users as you want.  But as your collaborations get large, you may want to organize your sharing with Teams.  In the following I'm creating a new team:
+
+<img width="1311" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/fe4d34fd-81d3-49b4-9764-1a2fbe7d1236">
+
+<img width="1311" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/cda5c418-a8d3-49df-ad87-040b98967a85">
+
+And now I can add people to the team, such as my other Synapse username briandoconnor.
+
+<img width="1311" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/345061cc-17a3-4f7b-8342-a39954a34340">
+
+<img width="1311" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/7e072165-7c90-4dd1-a3bc-3c23df4f7510">
+
+The invited person will get an email that will allow them to accept (or reject) your team request.
+
+You can also change some high-level team settings here:
+
+<img width="1311" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/24673b09-bf96-4361-b05d-c8b19d2f0060">
+
+Going back to the project space, you can share with Teams in addition to individuals:
+
+<img width="1311" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/6a970985-2303-4072-96a7-f4db9b266a9c">
 
 ## Uploading new versions of files
+
+Now that you've shared your project, the next step is to upload another version of the file we uploaded earlier.  This is similar to you, or a collabortor, updating a shared result file with a new version.
+
+Start by navigating back to the file you uploaded earlier, click on it and you should see the following:
+
+<img width="1311" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/91aff570-a84b-4d13-a2e9-2b24c133a92f">
+
+Click on the up arrow, this will let you drag and drop a new version of the file to upload:
+
+<img width="1311" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/84a4be97-dba2-4573-b870-0ad05f66f100">
+
+You need to upload a new version of the file, if the file is the same, a new version won't get creted.
+
+I updated the index.html file to include a change, uploaded it, and you can see in the result below the version is now V2:
+
+<img width="1311" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/a5b7d56a-6e14-449a-9d6a-a8e106d32c15">
+
 
 ## Using Tables
 
@@ -183,16 +224,28 @@ Then click on "Project Sharing Settings", you see this dialog box:
 - DOI
 - public data
 
-# Tutorial 2
+## Assignment
+
+- Give them a problem scenario to solve 
+
+# Tutorial 2: Programmatic Access 
 
 Programmatic access
 
 ## Setting up Mybinder.org
 
-## Logging in
+## Installing the Synapse Python Client 
 
-## Upload 
+## Logging in to Synapse
 
-## Download
+## Upload files
+
+## Download files
+
+## Query table 
 
 ## Graph something 
+
+# Cleanup
+
+Delete your project
