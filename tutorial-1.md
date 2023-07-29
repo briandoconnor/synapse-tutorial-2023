@@ -212,6 +212,40 @@ I updated the index.html file to include a change, uploaded it, and you can see 
 
 <img width="1311" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/a5b7d56a-6e14-449a-9d6a-a8e106d32c15">
 
+As a researcher, this easy ability to manage versions of your data is incredibly important.  Whether you're working as a team or researchers on a particular analysis or working indepdently, you will always have multiple iterations of files and results that you will want to track and share.  
+
+In this figure below I clicked on the version link under the name of the file, which opens a "Version History" that you can explore.  You can see there are two versions of this file, the only difference being the header was updated to "Test Summary v2".  I can download either version of the file, or create DOIs for my publication.  This is great since you can publish on a version of the file and continue to upload newer versions.
+
+<img width="1484" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/948316cb-6bd2-4f7d-b97f-05f148ef9ae2">
+
+## Provenance 
+
+Provenance in Synapse refers to the tracking of file histories, how they related to each other, how the transformations between versions happened.
+
+By default, when you upload a file (or new version of a file), you will see a very simple provenance graph.  But you can use this feature to describe how you arrived at a version of a file.  This process of documenting history is critical for science, it allows you to track the tools you used to create a result, the parameters you used, and the inputs among others.
+
+On version 2 of the index.html file, click on the "File Tools" button and choose "Edit File Provenance".
+
+<img width="1484" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/ff1240cd-6ea2-4cad-9c92-47c1e66a6222">
+
+You can then select the version 1 of the file in the "Used" section.  Click on "Add Synapse Reference":
+
+<img width="1484" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/ec46d4df-f006-4ebb-afea-094ebe0f6dae">
+
+Select the index.html and "Version 1" in the pulldown.  This is the source file we used to create V2 of the file.
+
+<img width="1484" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/bb9ee3e7-7718-48b5-9bd2-5f50404beecc">
+
+Under Executed, click on "Add External URL Reference", we're just going to put a URL to the editor I used:
+
+<img width="1484" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/de590450-bf2b-4576-9e6b-a6801655602f">
+
+Now you can click on "Save":
+
+<img width="1484" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/cb720508-2a78-4cb3-a22d-2520b9691cef">
+
+You can now see the version 2 of the index.html file has a clear relationship to version 1 and the process used (the text editor) to actual do the transformation.
+
 
 ## Using Tables
 
@@ -245,6 +279,10 @@ Programmatic access
 ## Query table 
 
 ## Graph something 
+
+## Assignment 
+
+## Tutorial 3: Data Submission for INCLUDE
 
 # Cleanup
 
