@@ -286,6 +286,8 @@ Like files, tables can have wiki spaces, can be versioned, and can have DOIs cre
 
 Tables can be complicated, have many columns, rows and be related to other tables.  When you publish on your data, you may wish to create a snapshot.  This allows you to crate a snapshot of tables at a specific moment in time, for referencing in publications and sharing.
 
+<img width="1496" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/b19efc35-9408-4e28-83e9-cee51cef6189">
+
 > [!NOTE]  
 > To learn more about Tables... https://help.synapse.org/docs/Organizing-Data-With-Tables.2011038095.html 
 
