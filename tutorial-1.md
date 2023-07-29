@@ -248,8 +248,34 @@ You can now see the version 2 of the index.html file has a clear relationship to
 
 <img width="284" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/78514e9d-3474-4d65-9408-1a0670464b42">
 
-
 ## Using Tables
+
+File support in Synapse is great to upload and orgnize results.  But often times, you may have tabular data that you want to share and make queriable.  In many ways, this functions as a database, allowing you to do powerful queries on your data directly (vs. just storing files that you need to download to actually search).
+
+Table structure can be created from an Excel or Google Sheets document by first saving as a .tsv or .csv file.  You can then upload these to Synapse which will turn it into tables behind the scenes. 
+
+<img width="483" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/12b88afd-be9c-4e0d-87cf-05f6bfd4388a">
+<img width="519" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/c446e2c1-45e9-4665-9524-04a931f73b48">
+
+
+Click the upload button to upload the .tsv version of this file:
+
+<img width="1492" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/41886065-17af-49b2-8648-086816b8745e">
+
+You can name it, I'll call it `test_table`:
+
+<img width="1492" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/3aa51557-7fea-4a2e-a173-3b643aa84564">
+
+Synapse will guess the types of each column, but you can customize that by clicking on "Schema Options":
+
+<img width="1492" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/d0ac2595-8e7f-4699-ac9c-17e8ab6bf695">
+
+In this case, I changed the "file" column to be "File" type.
+
+
+
+> [!NOTE]  
+> To learn more about Tables... https://help.synapse.org/docs/Organizing-Data-With-Tables.2011038095.html 
 
 ## Generating a File Browser 
 
@@ -259,6 +285,9 @@ You can now see the version 2 of the index.html file has a clear relationship to
 - make the data public 
 - DOI
 - public data
+
+## Using Datasets 
+
 
 ## Assignment
 
