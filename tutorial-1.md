@@ -254,9 +254,7 @@ File support in Synapse is great to upload and orgnize results.  But often times
 
 Table structure can be created from an Excel or Google Sheets document by first saving as a .tsv or .csv file.  You can then upload these to Synapse which will turn it into tables behind the scenes. 
 
-<img width="483" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/12b88afd-be9c-4e0d-87cf-05f6bfd4388a">
-<img width="519" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/c446e2c1-45e9-4665-9524-04a931f73b48">
-
+<img width="519" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/df555d6e-de18-4d2b-ac6d-1c9e93f77c47">
 
 Click the upload button to upload the .tsv version of this file:
 
@@ -272,7 +270,21 @@ Synapse will guess the types of each column, but you can customize that by click
 
 In this case, I changed the "file" column to be "File" type.
 
+Now that the table was created, you can edit. Click on the table and, in the detail view, click on the pencil icon to edit the table:
 
+<img width="1440" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/cd17e27f-4de0-4eab-a16c-1db4f48f603f">
+
+I'll upload a mock RNAseq and WGS file for the files column in these rows.  Click on the upload icon to the right of the file field:
+
+<img width="1440" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/5827645a-ced5-41a1-afd6-75bef077e4f4">
+
+You can now see the full table populated including the file column containing `.cram` files.
+
+<img width="1496" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/2a57779c-a9f7-47c6-b026-566559509d83">
+
+Like files, tables can have wiki spaces, can be versioned, and can have DOIs created.
+
+Tables can be complicated, have many columns, rows and be related to other tables.  When you publish on your data, you may wish to create a snapshot.  This allows you to crate a snapshot of tables at a specific moment in time, for referencing in publications and sharing.
 
 > [!NOTE]  
 > To learn more about Tables... https://help.synapse.org/docs/Organizing-Data-With-Tables.2011038095.html 
