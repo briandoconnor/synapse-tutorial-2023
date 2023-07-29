@@ -246,6 +246,8 @@ Now you can click on "Save":
 
 You can now see the version 2 of the index.html file has a clear relationship to version 1 and the process used (the text editor) to actual do the transformation.
 
+<img width="284" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/78514e9d-3474-4d65-9408-1a0670464b42">
+
 
 ## Using Tables
 
