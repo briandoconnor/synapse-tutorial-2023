@@ -1,3 +1,9 @@
+# TODO:
+
+* remove "ID" from my upload table
+* make sure I annotate files uploaded and tables created
+* I think I want to upload some fake crams in the file upload step 
+
 # Tutorial 1: Synapse Basics
 
 https://www.synapse.org/#!Synapse:syn52134164/wiki/623112 as nimbusboconnor
@@ -292,6 +298,52 @@ Tables can be complicated, have many columns, rows and be related to other table
 > To learn more about Tables... https://help.synapse.org/docs/Organizing-Data-With-Tables.2011038095.html 
 
 ## Generating a File Browser 
+
+At this point, you've created a wiki space for the documentation on your project, you've uploaded a file to the Files section, and you've created a table which works like a database and also includes additional files.  In many ways, you have a collaborative Dropbox + Google Docs + MySQL database combination that's super flexible for your collaborations and let's you version and mint DOIs for just about everything in order to support publishing your awesome results!  And it's all free to use and ready to go!
+
+But Synapse as another feature that I really like that takes your collabortive environment to the next level.  Imagine, if you will, that your collaborative project generates 1,000 files.  That can be really difficult to navigate, either on the Files tab or the Tables tab if you end up using that feature to organize files.
+
+What we'd really like is a simple way to browse and facet (think Amazon shopping interface) on files, whether this is used for publishing lots of data, across teams for a collaboration, or even just within your lab.
+
+To get started doing this we're going to pick up where we left off with Tables.
+
+<img width="1496" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/6f3918ec-154c-47ab-806a-fb833d2fc0c1">
+
+<img width="1496" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/67891602-17aa-440f-abac-e3f89604ce4b">
+
+
+You can actually add files from multiple projects, really helpful if you're working in a large consortium that has many different projects and you want to create a file view across them.
+
+<img width="1496" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/fbc98c26-6a61-4b06-9470-03500974150f">
+
+<img width="1496" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/ff0fd21f-d966-4fd9-90d9-3e50cbe0a8e3">
+
+<img width="1496" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/b3485927-559d-4694-bbac-e9ebbab619ea">
+
+Now you can select the fields you want to be able to search on:
+
+<img width="1496" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/d56b97ee-fdde-42cf-8f43-6aa0e2f1f4d3">
+
+Notice you son't see the columns in your table... strange!  Let's click on "Import Columns" and select the "test_table":
+
+<img width="1496" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/44b218d3-2492-4fe3-b570-3921bc7be8fa">
+
+And now you see the columns we defined ourselves: species, data_type, and file.  I'll select those along with a fiew other fields that might be useful to search on.  I'll also remove the fields I don't need:
+
+<img width="1496" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/2ae1151b-e95b-4594-8210-397987cd24b6">
+
+And here we go:
+
+<img width="1496" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/e2e25431-4b89-4e7a-8e69-00a7727744b5">
+
+You'll notice a few things:
+
+0. the _content_ of the table "test_table" isn't being picked up, this view is created for the table as an entity as a whole
+0. the table is missing "species" and "data_type"
+
+The first items is by deisgn but let's fix the second.
+
+LEFT OFF HERE
 
 ## Publishing
 
