@@ -338,22 +338,35 @@ And here we go:
 
 You'll notice a few things:
 
-0. the _content_ of the table "test_table" isn't being picked up, this view is created for the table as an entity as a whole
-0. the table is missing "species" and "data_type"
+1. the _content_ of the table "test_table" isn't being picked up, this view is created for the table as an entity as a whole
+1. the table is missing "species" and "data_type"
 
 The first items is by deisgn but let's fix the second.
 
-LEFT OFF HERE
+Open the files browser.  We previously uploaded index.html, now we're going to upload some more fake RNASeq and WGS files.
+
+Drag and drop the files `wgs_1.cram` ... `wgs_3.cram` and `rna_seq_1.cram` ... `rna_seq_3.cram`.
+
+<img width="1496" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/0c7feee9-7e01-4d9a-b747-dca33aa0ca61">
+
+Click on the label icon, now you can edit the annotations assocaited with each file, add a `species` key with a value like mouse and a `data_type` key with a value of `html` for the index.html, `rnaseq` for RNASeq files, and `wgs` for WGS files.
+
+You'll have to do this for each file you upload, in a future tutorial we'll use a Python script to do this.  If you have thousands of files you can see how this would be a big help!
+
+<img width="1496" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/c6fa6486-03d7-451b-bbaf-c6be415468a9">
+
+For one of the WGS files:
+
+
 
 ## Publishing
 
 - Mint a DOI
 - make the data public 
-- DOI
-- public data
 
-## Using Datasets 
+## Other Features
 
+- Using Datasets 
 
 ## Assignment
 
