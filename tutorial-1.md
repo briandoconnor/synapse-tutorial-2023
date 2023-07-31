@@ -2,7 +2,9 @@
 
 * remove "ID" from my upload table
 * make sure I annotate files uploaded and tables created
-* I think I want to upload some fake crams in the file upload step 
+* I think I want to upload some fake crams in the file upload step
+* fill in the assignment sections
+* fill in documentation links for more information 
 
 # Tutorial 1: Synapse Basics
 
