@@ -434,18 +434,37 @@ You can't actually give download permissions to anyone on the web (e.g. no Synap
 
 We can also make datasets available for anonymous reviewer access, making it possible to safely share data during the publication review process.  Reach out to us if you're interested!
 
-
 ## Assignment
 
 - Give them a problem scenario to solve 
 
 # Tutorial 2: Programmatic Access 
 
-Programmatic access
+Everything we've done to this point has been through the Synapse web interface.  This is great since it's really easy to get started but when you try to use Synapse for large projects with thousands of files, things get overwhelming very quickly.
+
+In this tutorial we'll look at using Synapse through programmatic interfaces, namely with the Synapse Python client. In this way, you can script things like file upload and annotation so you and your collaborators can use interfaces like the File View to explore your data without a ton or work to set it up.  Likewise, the Python client allows you to download files for use in your analysis pipelines and to upload the results and provenance back.  For the most part, whaterver you can do in the web interface you can do through the API the client accesses.  The prefered client is Python-based but we have a version that can run in R as well.
 
 ## Setting up Mybinder.org
 
+For this tutorial we'll work in a Juypter notebook using Python. If your forte is R don't worry, the code examples are very simple and the more extensive online documenation for Synapse does a great job of showing you how to code in either Python or R.  
+
+You may have experience using Jupyter notebooks either on your own computer, a VM in the cloud, or on a hosted platform like Velsera, Cavatica, or Tera.  In this tutorial we'll go super simple, we'll use https://mybinder.org/, a service that provides free Jupyter notebook (Jupyter Labs) instances for lightweight compute and exploration.  Parentetically, this is a great way to make the Notebooks you store in GitHub immediately usable by others.  We won't go into great details on the features of MyBinder but this is really worth some exploration if you're intersted.  You can include a customized `environment.yml` file in your GitHub repository to specify library dependencies and other configuation.  See the [documentation](https://mybinder.readthedocs.io/en/latest/introduction.html) for more details.  Lucky for us, a stock MyBinder instance works just fine for this tutorial!
+
+Start by going to https://mybinder.org/ and entering `https://github.com/briandoconnor/synapse-tutorial-2023` into the 'GitHub repository name or URL field':
+
+<img width="1496" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/3782dbb7-b3f1-40fa-8846-57b3dadd287b">
+
+You'll then click 'launch' and wait a couple of minutes to start.  You can follow the progress and eventually get something that looks like the following:
+
+<img width="1049" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/442eecc0-9853-466a-8c03-1df7b604db6b">
+
+This is extremely nifty, there are few places online where you can use a fully functioning notebook environment for free.  If you're interested, another good free Notebook environment is [Google Collab](https://colab.google/), which I confirmed worked with the tutorial below.  Here's a screenshot from that alternative service:
+
+<img width="1690" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/38ee1fdb-dbc4-4b0b-98e4-1c628b981fc8">
+
 ## Installing the Synapse Python Client 
+
+Now that your Binder notebook server is running, click on 'Python 3 (ipykernel)' under the Notebook section.  
 
 ## Logging in to Synapse
 
@@ -463,7 +482,7 @@ You need to save this access token somewhere safe, like 1Password or LastPass...
 import synapseclient
 syn = synapseclient.Synapse()
 
-# You need to login first. Replace "username" and "password" with your actual Synapse username and password.
+# You need to login first. Replace '...' with your Synapse access token.
 syn.login(authToken='...'
 
 # Replace "syn123" with your actual Synapse ID.
