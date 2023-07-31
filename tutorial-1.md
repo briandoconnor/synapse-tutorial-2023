@@ -357,16 +357,25 @@ You'll have to do this for each file you upload, in a future tutorial we'll use 
 
 For one of the WGS files:
 
+<img width="1496" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/3e5f9ce6-7ca4-46d7-83e4-16a74fdc9d2d">
 
+Now if we take a look back at the file view we see the following:
+
+<img width="1496" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/78651d0a-4838-4e1c-9b3e-5872176bbfe2">
+
+So now we have the `species` and `data_type` facets that we can filter files on!  This is cool, you can quicky filter this file view for data that you're interested in based on file annotations.  Over time, you can add more files to your project and they will show up here.  This is designed to be a live view that can be dynamically added to over time.  It's a great way to be able to filter your active files quickly and easily.
+
+For example, I uploaded another RNASeq file (`rna_seq_4.cram`), annotated it with the same attributes, and then it automatically shows up in the file view!
+
+<img width="1496" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/f3987b21-6a36-45f8-a246-5d20e354a6db">
+
+This all might seem like a trvial thing, but when you're working on a large collaboration with thousands of files this is a great way to organize and slide-and-dice data between you and your collaborators.  Beyond just the simple folders and sub-folders approach often used in shared workspaces.
 
 ## Publishing
 
+- Datasets 
 - Mint a DOI
 - make the data public 
-
-## Other Features
-
-- Using Datasets 
 
 ## Assignment
 
@@ -381,6 +390,31 @@ Programmatic access
 ## Installing the Synapse Python Client 
 
 ## Logging in to Synapse
+
+You need to setup a personal access token, see you Account Settings and look for this section:
+
+<img width="1496" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/774989b0-f2b5-46c1-84c6-844b65f3aaa9">
+
+Now create a new access token:
+
+<img width="1496" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/87d5e5bd-b751-4acc-93ff-c77bec5a317f">
+
+You need to save this access token somewhere safe, like 1Password or LastPass... once you close this window you can't get the access token again!!
+
+```
+import synapseclient
+syn = synapseclient.Synapse()
+
+# You need to login first. Replace "username" and "password" with your actual Synapse username and password.
+syn.login(authToken='...'
+
+# Replace "syn123" with your actual Synapse ID.
+synapse_id = 'syn52190581'
+entity = syn.get(synapse_id)
+
+print(entity)
+```
+
 
 ## Upload files
 
