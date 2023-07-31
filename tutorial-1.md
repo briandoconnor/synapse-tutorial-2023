@@ -373,9 +373,65 @@ This all might seem like a trvial thing, but when you're working on a large coll
 
 ## Publishing
 
-- Datasets 
-- Mint a DOI
-- make the data public 
+Now that we've explored how you can use Synapse to work on your research and collaborate in small (or large) groups we will turn to how you can use the platform to publish.  
+
+We'll walk through each of the following activities:
+- Create a Dataset 
+- Mint a DOI for a file and the Dataset
+- Make your data public 
+
+### Creating a Dataset
+
+As you saw in the file view, when you add new data the file view is updated.  This is great when you are collaborting on analysis and new data is uploaded and shared.  But when you're getting ready to publish, you'll likely want some stable dataset that you can reference in your paper.  Datasets are the answer, they let you make a durable file view that can be published for others to use.
+
+Navigate to the Datasets section of your project and click `Add New...` and `Dataset`:
+
+<img width="1496" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/27f19545-3ccc-451f-bc2e-582cc9f7f175">
+
+You'll then be greated with a draft dataset where you can publish your files.  In this case, I'm going to assume `rna_seq_3.cram` and `wgs_3.cram` are the final files we're going to publish on.  So lets add those:
+
+<img width="1496" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/5af4f955-164d-4b72-b62d-fc0163bdc7af">
+
+And add those files, and then click `Save`:
+
+<img width="1496" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/8980861b-4418-497d-86d8-33f48c535c30">
+
+We're not quite done yet, this is still a draft version of the dataset:
+
+<img width="1496" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/fdbf0e24-e536-45d0-a84d-87e58497fc33">
+
+Next we're going to click on the icon with the arrow and circles.  This is the "Create Stable Version" button:
+
+<img width="1496" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/61d693a9-6b94-434e-b137-cb096ed7d4f4">
+
+### Minting a DOI
+
+DOIs are extremely useful when it comes time to publish.  For example, we can give the stable release of our dataset, which is now immutable, a DOI and then use that in our publication text.
+
+<img width="1496" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/25f465af-38c3-4c45-89c4-bf4a935ef8c3">
+
+We can now see the DOI was created:
+
+<img width="1496" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/58b6f202-5042-453a-afb9-23b7d5909944">
+
+You can drop in the URL: https://doi.org/10.7303/syn52190980.1 into your publication, most publishers recognize DOIs as a means of referencing data in a stable and durable way that is perfect for publications.
+
+### Sharing Data Publicaly 
+
+One last task, it's great that we were able to create a Dataset and mint a DOI that could be used for publications.  But what about researchers actually accessing the files, for example `wgs_3.cram`? 
+
+We can easily share this Synapse project with particular Syanpse users directly or with any Synapse user.  Go back to the project main page and choose 'Project Sharing Settings' under 'Project Tools'.  From there you can add individual users or teams:
+
+<img width="1496" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/e3b21c7a-66a3-45f8-9569-600116b91f7d">
+
+If you want to make your project accessible anyone click the 'Make Public' button:
+
+You'll notice a few things, 'All registered Synapse users' is now 'Can download' and 'Anyone on the web' is now 'Can view'.
+
+You can't actually give download permissions to anyone on the web (e.g. no Synapse login required) since we don't want Synapse to be a general data hosting platform like Dropbox or Google Drive (since this is ripe for abuse).  However, we have a process to make your key, published datasets accessible to the public.  You can email `act@sagebase.org` and request that your project be made fully public, which is great for publications and efforts where you want to share data as widely as possible.
+
+We can also make datasets available for anonymous reviewer access, making it possible to safely share data during the publication review process.  Reach out to us if you're interested!
+
 
 ## Assignment
 
