@@ -328,9 +328,9 @@ Notice you son't see the columns in your table... strange!  Let's click on "Impo
 
 <img width="1496" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/44b218d3-2492-4fe3-b570-3921bc7be8fa">
 
-And now you see the columns we defined ourselves: species, data_type, and file.  I'll select those along with a fiew other fields that might be useful to search on.  I'll also remove the fields I don't need:
+And now you see the columns we defined ourselves: species, data_type, and file.  I'll select those along with a fiew other fields that might be useful to search on.  I'll also remove the fields I don't need.  Make sure you select "Facet" as "Values" for the `species` and `data_type` fields:
 
-<img width="1496" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/2ae1151b-e95b-4594-8210-397987cd24b6">
+<img width="1496" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/b4c4b54a-5189-469a-9c8e-0da183a5ba0d">
 
 And here we go:
 
