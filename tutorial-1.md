@@ -4,7 +4,8 @@
 * make sure I annotate files uploaded and tables created
 * I think I want to upload some fake crams in the file upload step
 * fill in the assignment sections
-* fill in documentation links for more information 
+* fill in documentation links for more information
+* have my own notebook on my laptop just in case mybinder or collab don't work 
 
 # Tutorial 1: Synapse Basics
 
@@ -458,17 +459,31 @@ You'll then click 'launch' and wait a couple of minutes to start.  You can follo
 
 <img width="1049" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/442eecc0-9853-466a-8c03-1df7b604db6b">
 
-This is extremely nifty, there are few places online where you can use a fully functioning notebook environment for free.  If you're interested, another good free Notebook environment is [Google Collab](https://colab.google/), which I confirmed worked with the tutorial below.  Here's a screenshot from that alternative service:
+This is extremely nifty, there are few places online where you can use a fully functioning notebook environment for free.  If you're interested, another good free Notebook environment is [Google Collab](https://colab.google/), which I confirmed worked with the tutorial below.  Alternatively, you could use a pay service like Cavatica/Velsera or Tera (which are commonly used system for NIH programs). Here's a screenshot from the Google Collab alternative service:
 
 <img width="1690" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/38ee1fdb-dbc4-4b0b-98e4-1c628b981fc8">
 
 ## Installing the Synapse Python Client 
 
-Now that your Binder notebook server is running, click on 'Python 3 (ipykernel)' under the Notebook section.  
+Now that your Binder notebook server is running, click on 'Python 3 (ipykernel)' under the Notebook section.  You should be greeted with a very empty notebook, something that looks like this:
+
+<img width="1690" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/8a716861-8659-42b7-b8fa-4262ea2b4ecd">
+
+Our first task is going to be to install the Synapse Python client library.  Put the following in the first code field:
+
+```
+!pip3 install synapseclient
+```
+
+Hit `shift`+`enter` to execute the cell.  You should see something like the following:
+
+<img width="1690" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/80e2fc55-7b93-4c05-8e5f-2ffdd42c75ce">
+
+You should see a success, in which case you now have the Synapse client installed in the Python instance running this notebook.
 
 ## Logging in to Synapse
 
-You need to setup a personal access token, see you Account Settings and look for this section:
+Now we need to authenticate/authorize the Synapse client in this notebook to work on your behalf.  To do this, you need to setup a personal access token, see you Account Settings and look for this section:
 
 <img width="1496" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/774989b0-f2b5-46c1-84c6-844b65f3aaa9">
 
@@ -477,6 +492,10 @@ Now create a new access token:
 <img width="1496" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/87d5e5bd-b751-4acc-93ff-c77bec5a317f">
 
 You need to save this access token somewhere safe, like 1Password or LastPass... once you close this window you can't get the access token again!!
+
+Keep in mind, this access token is sensitive... don't check in your notebook into Github or another place where others can see it.  If you accidently do, please immediately delete this access token from your account.  _Remember, you are responsible for keeping your Synapse account credentials safe._
+
+The next step is to do the login, copy the following text to a new cell in the notebook, make sure you replace the '...' with your access token (single quoted, just replace ... with your access token):
 
 ```
 import synapseclient
@@ -492,8 +511,13 @@ entity = syn.get(synapse_id)
 print(entity)
 ```
 
+When you've copied this into the notebook and replaced ... with your access token go ahead and run the cell with `shift`+`enter`.  Also, replace the synapse_id with a synapse ID from one of the files in your test project.  You should see something that looks like the following.  Note it says 'Welcome, <username>!' showing you've logged in and gives the details on the file whose Synapse ID you included:
+
+<img width="1690" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/22e72351-159f-48c1-b376-dceb2035048a">
 
 ## Upload files
+
+
 
 ## Download files
 
