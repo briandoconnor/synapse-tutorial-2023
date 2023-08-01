@@ -6,7 +6,8 @@
 * fill in the assignment sections
 * fill in documentation links for more information
 * have my own notebook on my laptop just in case mybinder or collab don't work
-* spell check tutorial 
+* spell check tutorial
+* consider removing the table file uploads... it's confusing and they don't work well...
 
 # Tutorial 1: Synapse Basics
 
@@ -588,36 +589,59 @@ File upload and download, including annotation setting and provenance recording,
 
 Let's try to add some data to this table, the schema we're using is identical to the annotations we applied to new files uploaded in the Files section.  But this table could just as easily be any schema you like.  For example, imaging storing all your files in the Files section, annotating them with key attributes, and then using a table with a schema that stores clinical or phenotypic data.  This is a very common usecase for projects using Synapse.  In a new cell copy and paste the code below and update the Synapse ID to match your table.
 
+First, we'll create some new files to upload, copy and paste this into a code cell and run:
 
 ```
-import synapseclient.table as synTable
-import pandas as pd
-
-table_id = 'syn52178128'
-
-rows = pd.DataFrame({
-    'id': [3, 4],  
-    'species': ['human', 'mouse'],
-    'data_type': ['rnaseq', 'wgs'],
-    'file': [127433513, 127433513]
-})
-
-syn.store(synapseclient.Table(table_id, rows))
+!echo '6' > rna_seq_6.cram
+!echo '7' > wgs_7.cram
 ```
 
+Now copy and paste into a code cell, update your table ID (replace 'syn52178128' with your table Synapse ID and '' with your overall project Synapse ID), and run:
+
 ```
-#import synapseclient.table as synTable
+import os.path
 
-new_rows = [[3, "human", "rna_seq", 127433513],
-            [4, "mouse", "wgs", 127433513]]
+#project = 'syn52134164'
+project = 'syn52178128'
 
-# get the schema
+data = [[3, "human", "rna_seq", "rna_seq_6.cram"],
+            [4, "mouse", "wgs", "wgs_7.cram"]]
+
+# upload these files
+for row in data:
+    file_handle = syn.uploadFileHandle(os.path.join('./', row[3]), parent=project)
+    row[3] = file_handle['id']
+
+# get the table schema
 schema = syn.get('syn52178128')
 print (schema)
-#row_set = synTable.as_table_columns("syn52178128", new_rows)
+
+# now store 
 row_reference_set = syn.store(RowSet(schema=schema, rows=[Row(r) for r in new_rows]))
 
 ```
+
+```
+import os.path
+
+project = 'syn52178128'
+
+data = [[3, "human", "rna_seq", 127433513],
+            [4, "mouse", "wgs", 127433513]]
+
+# get the table schema
+schema = syn.get('syn52178128')
+print (schema)
+
+# now store 
+row_reference_set = syn.store(RowSet(schema=schema, rows=[Row(r) for r in new_rows]))
+
+```
+
+And the result:
+
+<img width="1317" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/d5b154fd-c8ba-4dc9-925e-5e35ecb0598e">
+
 
 You can edit or delete rows using the Python client as well as create entirely new tables or uploading files directly into tables (as we did in the web interface).  You can find more information about using Tables in the Synapse Python client [here](https://python-docs.synapse.org/build/html/Table.html#module-synapseclient.table).
 
