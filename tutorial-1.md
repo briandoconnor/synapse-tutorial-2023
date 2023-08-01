@@ -5,7 +5,8 @@
 * I think I want to upload some fake crams in the file upload step
 * fill in the assignment sections
 * fill in documentation links for more information
-* have my own notebook on my laptop just in case mybinder or collab don't work 
+* have my own notebook on my laptop just in case mybinder or collab don't work
+* spell check tutorial 
 
 # Tutorial 1: Synapse Basics
 
@@ -499,6 +500,13 @@ The next step is to do the login, copy the following text to a new cell in the n
 
 ```
 import synapseclient
+from synapseclient import Activity
+from synapseclient import Entity, Project, Folder, File, Link
+from synapseclient import Evaluation, Submission, SubmissionStatus
+from synapseclient import Wiki
+from synapseclient import Schema, Column, Table, Row, RowSet, as_table_columns
+
+
 syn = synapseclient.Synapse()
 
 # You need to login first. Replace '...' with your Synapse access token.
@@ -517,13 +525,81 @@ When you've copied this into the notebook and replaced ... with your access toke
 
 ## Upload files
 
+Now that you're connected to Synapse via the Python client, it's time to do some basic operations.  We'll start with uploading a file, in this case a fake cram file that can be used in our file browser on our project.  Put the following in a new code cell:
 
+```
+!echo 'hi there, this is a fake cram file' > rna_seq_5.cram
+```
+
+And go ahead and execute it... it will create another fake cram file.
+
+Now we'll look up the project Synapse ID that you created in last tutorial, in my case the Synapse ID 'syn52134164'. Yours will be different:
+
+<img width="618" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/baef7b6c-9bea-4d4f-8b29-f99b0ec21728">
+
+We'll use that ID to attach the new file to the project as a parent, copy the code below, paste it in a new code cell, and update the specific Synapse ID to be your project:
+
+```
+project_entity = syn.get('syn52134164')
+
+print (project_entity)
+
+test_file = File('rna_seq_5.cram', description='A sample fake cram file', parent=project_entity, species='human', data_type='rnaseq')
+test_file = syn.store(test_file)
+
+print (test_file)
+```
+
+You should see output similar to the following:
+
+<img width="1656" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/feea825e-f2c9-4ffe-889a-b5b91dc432ab">
+
+Now that you've done this, wait 30 seconds or so and then head back to your `test_table_view` that you created in the previous tutorial.  Notice that rna_seq_5.cram is now listed?  
+
+<img width="1490" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/0fa75775-90ea-4e2b-9ac1-a417dc2adca6">
+
+This may seem like a really trivial example, but it shows you how you could upload a file and annotations with just a couple of lines of code.  Remember how time intensive it was to do this by hand for even just a few files?  This programmatic approach means you can bulk upload hundreds or thousands of files for your project without having to manually upload and annotate them through the web interface.
 
 ## Download files
 
-## Query table 
+This is very simple, you can use the same approach as above but instead of uploading we're going to download to the current directory.  Make sure you change the Synapse ID to one of your files, enter this in a new cell and execute.  Keep in mind, if you uploaded a real CRAM file (or any binary file) you may want to skip printing it's contents, you'll just get jibberish text:
 
-## Graph something 
+```
+# download file into current working directory
+entity = syn.get('syn52190584', downloadLocation='.', version='1')
+print(entity.name)
+print(entity.path)
+
+# now let's print that content out
+with open(entity.path, 'r') as file:
+    content = file.read()
+print(content)
+```
+
+And here's what that looks like:
+
+<img width="1328" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/3f4b5c17-e380-408d-976e-515d4f8ecdc0">
+
+In my case this just prints '1' since that's the content I put in this fake cram file.  Now, if this was a real CRAM file you might use a whole host of tools to explore and analyse the result.  But this code shows you how to pull data back from Synapse for whatever use you have in mind.
+
+## Querying Tables 
+
+File upload and download, including annotation setting and provenance recording, is a key function of the Python client.  But another area that will be very commonly used is querying tables and returning results as data frames.  Files are well and good, but many projects contain structured data in tables, so being able to manipulate those tables will be key. Tables can be built up by adding rows and queried with a SQL-like language.  Let's look at an example.  First, find the 'test_table' Synapse ID that you created in the previous tutorial.  In my case it's `syn52178128`.  
+
+Let's try to add some data to this table, the schema we're using is identical to the annotations we applied to new files uploaded in the Files section.  But this table could just as easily be any schema you like.  For example, imaging storing all your files in the Files section, annotating them with key attributes, and then using a table with a schema that stores clinical or phenotypic data.  This is a very common usecase for projects using Synapse.  In a new cell copy and paste the code below and update the Synapse ID to match your
+
+```
+query = syn.tableQuery('SELECT * FROM syn52178128')
+
+```
+
+You can find more information about using Tables in the Synapse Python client [here](https://python-docs.synapse.org/build/html/Table.html#module-synapseclient.table).
+
+## Next Steps
+
+We explored file upload and download as well as table queries but there are many other ways to interact with Synapse through the Python client.  These examples including writing annotations to the file we uploaded (which saves a lot manual clicking in the web interface).  But you can use the client to automate other time consuming tasks such as filling out provenance information, changing permission, etc.  You can also interact with wiki content, datasets, tables, etc.  Generally speaking, what you can do in the web interface in Synapse can be automated in code with the R or Python clients.  If you do run into a situation where the functionality you're looking for isn't in the R or Python client, you can always directly code to the [Synapse REST API](https://rest-docs.synapse.org/rest/).  The API is documented in great detail and, while it is lower-level than the R or Python clients, it gives you full control over your projects in Synase.  This is great if you want to use a language that doesn't support the R or Python clients (for example Java).  
+
+Another approach that many users might find useufl is the [Synapse command line tool](https://python-docs.synapse.org/build/html/CommandLineClient.html).  This lets you incorporate the use of Synapse within Bash and other scripts.   Users on a Mac or Linux environment might find this extremely useful and it's installed automatically when you install the Python client.
 
 ## Assignment 
 
