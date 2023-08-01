@@ -7,7 +7,7 @@
 * fill in documentation links for more information
 * have my own notebook on my laptop just in case mybinder or collab don't work
 * spell check tutorial
-* consider removing the table file uploads... it's confusing and they don't work well...
+* I need to remove the table file uploads... it's confusing and they don't work well...
 
 # Tutorial 1: Synapse Basics
 
