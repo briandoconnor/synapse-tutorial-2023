@@ -6,14 +6,20 @@
 * fill in the assignment sections
 * fill in documentation links for more information
 * have my own notebook on my laptop just in case mybinder or collab don't work
-* spell check tutorial
+* spell check tutorial  
 * I need to remove the table file uploads... it's confusing and they don't work well...
 
 # Tutorial 1: Synapse Basics
 
-https://www.synapse.org/#!Synapse:syn52134164/wiki/623112 as nimbusboconnor
+In this tutorial we're going to learn about the Synapse web user interface (https://synapse.org) and it's most key features.  By the end of this tutorial you will have a Synapse account, be able to create projects, upload/download data, and create tables/datasets to store and share your results.  You can then use this account to collaborate with others and publish your research methods and results.  
 
-In this tutorial we're going to learn about Synapse and it's most basic features.
+Our free account has a recommended maximum total storage footprint of 100GB or less.  If you need high-performance storage for >100GB and/or one-on-one tech support, we have a "supported" plan that you can [contact us](https://sagebionetworks.jira.com/servicedesk/customer/portal/9) to learn more about.
+
+> [!NOTE]  
+> You can find my test project [here](https://www.synapse.org/#!Synapse:syn52134164/wiki/623112) (Synapse ID: syn52134164) in case you want to explore what it looks like by the end of a tutorial or if you want to use my mock files.  If you would like to add my account to your project (to help with debugging for example) my username is nimbusboconnor (a test account).
+
+> [!NOTE]  
+> There is a __ton__ of documentation on Synapse.org, take a look [here](https://help.synapse.org/docs/)!  We also have a [helpdesk](https://sagebionetworks.jira.com/servicedesk/customer/portal/9) that is a good way to get help if you don't find the answer in our docs.
 
 ## Getting an account
 
@@ -23,58 +29,83 @@ Start by navigating to the [registration page](https://www.synapse.org/#!Registe
 
 You can setup an account with either a Google-based account ("Sign up with Google") or using an email and selecting a password.
 
-You'll get an email, you can then follow the link to set your account password.
+Once you register, you'll get an email to verify your account, you can then follow the link to set your account password.
 
-You then will need to take the "Synapse Pledge", which includes agreeing to governance policies, privacy policies, terms of service, etc.
+You then will need to take the "Synapse Pledge", which includes agreeing to governance policies, privacy policies, terms of service, etc.  Please review these carefully, you are responsible for safe data sharing on the Synapse platform.
 
 <img width="1355" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/68c303b3-584e-49fd-8d0d-583e2a9fee48">
 
-
 ## Taking the quiz so you can upload
 
-You need to become a "certified" user.  You can do this by taking the quiz [here](https://www.synapse.org/#!Quiz:Certification)
+You need to become a "certified" user in order to upload data to Synapse.  You can do this by taking the quiz [here](https://www.synapse.org/#!Quiz:Certification)
 
 <img width="1431" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/0b19c08b-68ee-4fc5-886d-80749a0814ee">
 
-The quiz is just 15 questions and should take < 15 min.
+The quiz is just 15 questions and should take << 15 min to complete.
 
 <img width="1431" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/1809b51a-e6d9-4048-88ce-5d3ce2204d2e">
 
+> [!IMPORTANT]  
+> Assignment:
+> We'll pause here to let you finish registering and taking the Synapse quiz.  I can also answer any questions at this time.  Make sure you:
+> - register for Synapse and verify your email
+> - take the quiz and pass it
+
 ## Exploring Synapse
+
+We'll start by taking a quick tour of some of the features of Synapse.  Follow along as I walk through the interface, you should see something very similar on your account.
+
+### Projects
+
+Projects are really the key concept in Synapse, most roads lead back to them.  You organize work into a project; it might be for your own lab work, for collaboration with another researcher, or even dataset upload for a large consortium.  You can have many projects and, for big efforts or collaborations, you may actually have many different projects to organize distinct studies or data types.  Ultimately, it's up to you on how you organize and share your projects.
 
 ### Favorites
 
-Clicking on the star on the left menu will take you to a place where you can organize your favorite projects
+Clicking on the star on the left menu will take you to a place where you can organize your favorite projects.  This is very handy if you have lots of projects.
 
 <img width="1431" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/9c8542d2-e72e-4c72-a13a-32979ec891be">
 
 ### Teams
 
-You can see the teams you own, manage, or are a part of here.
+You can see the teams you own, manage, or are a part of here:
 
 <img width="1431" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/3aeb8a54-ac6a-4dc1-940d-003572d034b2">
 
-You can also search teams to find ones you may want to join.
+You can also search teams to find ones you may want to join:
 
 <img width="1431" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/efaa5c39-3f81-461b-8270-f2abd570ffc2">
 
+Teams are a great way to organize large sets of collaborators.  These might be the other members of your researcher group, a collaboration you have with another lab, or working groups in a large consortium with many collaborators.  
+
+Creating teams will make it much easier to manage access permissions which you'll see later in the tutorials.  You can give permissions to a team on many different projects and then, when a new person comes into the team or another leaves, you just have to add/remove them from the team.  This avoids having to add/remove individuals from a bunch of different projects.
+
 ### Challenges
 
-You can see Challengs you've joined here:
+You can see Challenges you've joined here:
 
 <img width="1431" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/df30f8d4-dce8-4eed-a740-29ed58a7afe3">
 
+Challenges are out of scope for today's tutorial but they are a really powerful way to participate in algorithm/analysis development with the wider community.  Many of the Challenges hosted by Sage are part of the DREAM Challenges effort, which regularly hosts challenges ranging from digital mammography classification to variant calling to machine learning methods testing.  Sage has hosted over 60 Challenges to date, resulting in hundreds of publications and thousands of participants!  Check it out!
+
 ### Download Cart
 
-This is where you can collect data files on Synapse that you'd like to download.  It helps you organize your access requests for data that is controlled access as well.
+This is where you can collect data files on Synapse that you'd like to download.  It helps you organize your access requests for data that is controlled access as well:
 
 <img width="1431" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/1118fc68-dce4-4ce4-996a-640ef2620089">
+
+We won't work with this feature in today's tutorial but it's a great way to add data references to your cart as you explore Synapse projects and download in one go.  In the future watch this space, we're working on interoperability with Velsera/Cavatica, Terra, and other compute environments to make it easier to "send" data references from Synapse into those environments for analysis.
 
 ### Search
 
 Allows you to find projects, files, datasets, etc of interest.
 
 <img width="1431" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/1eccfb6c-48aa-4e87-9b84-5253faf4ae41">
+
+The search functionality of Synapse is fairly simple and unstructured but it does let you locate key public projects and search through your projects that you have access to.
+
+Sage has built many project data portals built on top of Synapse-based data.  These typically provide much more sophisticated ways of exploring data, for example, the AD Knowledge portal allows you to search for data files, publications, people, etc.  You can see highights of available public portals on the [Synapse homepage](https://synapse.org).
+
+In today's tutorial we will actually create a mini-data portal that you can share with your collaborators to make exploring your projects' data easier.
 
 ## Creating your first project
 
@@ -136,7 +167,7 @@ You'll now see a new page (in this case "Testing Page 2") appear in a navigation
 
 
 > [!NOTE]  
-> Give it a try, start by creating a few pages and then adding some Markdown content 
+> Give it a try, start by creating a few pages and then adding some Markdown content
 
 ## Uploading some files
 
@@ -167,7 +198,7 @@ Things to think about:
 - we use AWS in us-east-1 (east coast of the US) by default
 - if you want to, you can "bring your own bucket".  This lets you own the storage yourself while managing it within Synapse.  Really useful if you want to store a lot more than 100GB of data on the cloud and need to control it's location (e.g. Google, AWS, in a partiuclar region).  Downside is it requires knowledge of how to set this up in the cloud and your own cloud account which not everyone has.
 
-## Sharing with others 
+## Sharing with others
 
 So by this point you've created your Synapse project, you've added some documentation in the form of a wiki, and you uploaded a file.  Now it's time to share the project with another Synapse user so you can collaborate.
 
@@ -229,7 +260,7 @@ In this figure below I clicked on the version link under the name of the file, w
 
 <img width="1484" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/948316cb-6bd2-4f7d-b97f-05f148ef9ae2">
 
-## Provenance 
+## Provenance
 
 Provenance in Synapse refers to the tracking of file histories, how they related to each other, how the transformations between versions happened.
 
@@ -263,7 +294,7 @@ You can now see the version 2 of the index.html file has a clear relationship to
 
 File support in Synapse is great to upload and orgnize results.  But often times, you may have tabular data that you want to share and make queriable.  In many ways, this functions as a database, allowing you to do powerful queries on your data directly (vs. just storing files that you need to download to actually search).
 
-Table structure can be created from an Excel or Google Sheets document by first saving as a .tsv or .csv file.  You can then upload these to Synapse which will turn it into tables behind the scenes. 
+Table structure can be created from an Excel or Google Sheets document by first saving as a .tsv or .csv file.  You can then upload these to Synapse which will turn it into tables behind the scenes.
 
 <img width="519" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/df555d6e-de18-4d2b-ac6d-1c9e93f77c47">
 
@@ -300,9 +331,9 @@ Tables can be complicated, have many columns, rows and be related to other table
 <img width="1496" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/b19efc35-9408-4e28-83e9-cee51cef6189">
 
 > [!NOTE]  
-> To learn more about Tables... https://help.synapse.org/docs/Organizing-Data-With-Tables.2011038095.html 
+> To learn more about Tables... https://help.synapse.org/docs/Organizing-Data-With-Tables.2011038095.html
 
-## Generating a File Browser 
+## Generating a File Browser
 
 At this point, you've created a wiki space for the documentation on your project, you've uploaded a file to the Files section, and you've created a table which works like a database and also includes additional files.  In many ways, you have a collaborative Dropbox + Google Docs + MySQL database combination that's super flexible for your collaborations and let's you version and mint DOIs for just about everything in order to support publishing your awesome results!  And it's all free to use and ready to go!
 
@@ -381,9 +412,9 @@ This all might seem like a trvial thing, but when you're working on a large coll
 Now that we've explored how you can use Synapse to work on your research and collaborate in small (or large) groups we will turn to how you can use the platform to publish.  
 
 We'll walk through each of the following activities:
-- Create a Dataset 
+- Create a Dataset
 - Mint a DOI for a file and the Dataset
-- Make your data public 
+- Make your data public
 
 ### Creating a Dataset
 
@@ -421,9 +452,9 @@ We can now see the DOI was created:
 
 You can drop in the URL: https://doi.org/10.7303/syn52190980.1 into your publication, most publishers recognize DOIs as a means of referencing data in a stable and durable way that is perfect for publications.
 
-### Sharing Data Publicaly 
+### Sharing Data Publicaly
 
-One last task, it's great that we were able to create a Dataset and mint a DOI that could be used for publications.  But what about researchers actually accessing the files, for example `wgs_3.cram`? 
+One last task, it's great that we were able to create a Dataset and mint a DOI that could be used for publications.  But what about researchers actually accessing the files, for example `wgs_3.cram`?
 
 We can easily share this Synapse project with particular Syanpse users directly or with any Synapse user.  Go back to the project main page and choose 'Project Sharing Settings' under 'Project Tools'.  From there you can add individual users or teams:
 
@@ -439,9 +470,9 @@ We can also make datasets available for anonymous reviewer access, making it pos
 
 ## Assignment
 
-- Give them a problem scenario to solve 
+- Give them a problem scenario to solve
 
-# Tutorial 2: Programmatic Access 
+# Tutorial 2: Programmatic Access
 
 Everything we've done to this point has been through the Synapse web interface.  This is great since it's really easy to get started but when you try to use Synapse for large projects with thousands of files, things get overwhelming very quickly.
 
@@ -465,7 +496,7 @@ This is extremely nifty, there are few places online where you can use a fully f
 
 <img width="1690" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/38ee1fdb-dbc4-4b0b-98e4-1c628b981fc8">
 
-## Installing the Synapse Python Client 
+## Installing the Synapse Python Client
 
 Now that your Binder notebook server is running, click on 'Python 3 (ipykernel)' under the Notebook section.  You should be greeted with a very empty notebook, something that looks like this:
 
@@ -583,9 +614,9 @@ And here's what that looks like:
 
 In my case this just prints '1' since that's the content I put in this fake cram file.  Now, if this was a real CRAM file you might use a whole host of tools to explore and analyse the result.  But this code shows you how to pull data back from Synapse for whatever use you have in mind.
 
-## Editing Tables 
+## Editing Tables
 
-File upload and download, including annotation setting and provenance recording, is a key function of the Python client.  But another area that will be very commonly used is querying tables and returning results as data frames.  Files are well and good, but many projects contain structured data in tables, so being able to manipulate those tables will be key. Tables can be built up by adding rows and queried with a SQL-like language.  Let's look at an example.  First, find the 'test_table' Synapse ID that you created in the previous tutorial.  In my case it's `syn52178128`.  Also, take a look at the 
+File upload and download, including annotation setting and provenance recording, is a key function of the Python client.  But another area that will be very commonly used is querying tables and returning results as data frames.  Files are well and good, but many projects contain structured data in tables, so being able to manipulate those tables will be key. Tables can be built up by adding rows and queried with a SQL-like language.  Let's look at an example.  First, find the 'test_table' Synapse ID that you created in the previous tutorial.  In my case it's `syn52178128`.  Also, take a look at the
 
 Let's try to add some data to this table, the schema we're using is identical to the annotations we applied to new files uploaded in the Files section.  But this table could just as easily be any schema you like.  For example, imaging storing all your files in the Files section, annotating them with key attributes, and then using a table with a schema that stores clinical or phenotypic data.  This is a very common usecase for projects using Synapse.  In a new cell copy and paste the code below and update the Synapse ID to match your table.
 
@@ -616,7 +647,7 @@ for row in data:
 schema = syn.get('syn52178128')
 print (schema)
 
-# now store 
+# now store
 row_reference_set = syn.store(RowSet(schema=schema, rows=[Row(r) for r in new_rows]))
 
 ```
@@ -633,7 +664,7 @@ data = [[3, "human", "rna_seq", 127433513],
 schema = syn.get('syn52178128')
 print (schema)
 
-# now store 
+# now store
 row_reference_set = syn.store(RowSet(schema=schema, rows=[Row(r) for r in new_rows]))
 
 ```
@@ -644,7 +675,7 @@ And the result:
 
 You can edit or delete rows using the Python client as well as create entirely new tables or uploading files directly into tables (as we did in the web interface).  You can find more information about using Tables in the Synapse Python client [here](https://python-docs.synapse.org/build/html/Table.html#module-synapseclient.table).
 
-## Querying Tables 
+## Querying Tables
 
 In addition to adding to a table, we can perform queries that use a SQL-like query language.  We'll start by installing [Pandas](http://pandas.pydata.org/), an excellent framework for working with tabular data.  Make a new cell with this content:
 
@@ -676,7 +707,7 @@ We explored file upload and download as well as table queries but there are many
 
 Another approach that many users might find useufl is the [Synapse command line tool](https://python-docs.synapse.org/build/html/CommandLineClient.html).  This lets you incorporate the use of Synapse within Bash and other scripts.   Users on a Mac or Linux environment might find this extremely useful and it's installed automatically when you install the Python client.
 
-## Assignment 
+## Assignment
 
 ## Tutorial 3: Data Submission for INCLUDE
 
