@@ -582,16 +582,68 @@ And here's what that looks like:
 
 In my case this just prints '1' since that's the content I put in this fake cram file.  Now, if this was a real CRAM file you might use a whole host of tools to explore and analyse the result.  But this code shows you how to pull data back from Synapse for whatever use you have in mind.
 
+## Editing Tables 
+
+File upload and download, including annotation setting and provenance recording, is a key function of the Python client.  But another area that will be very commonly used is querying tables and returning results as data frames.  Files are well and good, but many projects contain structured data in tables, so being able to manipulate those tables will be key. Tables can be built up by adding rows and queried with a SQL-like language.  Let's look at an example.  First, find the 'test_table' Synapse ID that you created in the previous tutorial.  In my case it's `syn52178128`.  Also, take a look at the 
+
+Let's try to add some data to this table, the schema we're using is identical to the annotations we applied to new files uploaded in the Files section.  But this table could just as easily be any schema you like.  For example, imaging storing all your files in the Files section, annotating them with key attributes, and then using a table with a schema that stores clinical or phenotypic data.  This is a very common usecase for projects using Synapse.  In a new cell copy and paste the code below and update the Synapse ID to match your table.
+
+
+```
+import synapseclient.table as synTable
+import pandas as pd
+
+table_id = 'syn52178128'
+
+rows = pd.DataFrame({
+    'id': [3, 4],  
+    'species': ['human', 'mouse'],
+    'data_type': ['rnaseq', 'wgs'],
+    'file': [127433513, 127433513]
+})
+
+syn.store(synapseclient.Table(table_id, rows))
+```
+
+```
+#import synapseclient.table as synTable
+
+new_rows = [[3, "human", "rna_seq", 127433513],
+            [4, "mouse", "wgs", 127433513]]
+
+# get the schema
+schema = syn.get('syn52178128')
+print (schema)
+#row_set = synTable.as_table_columns("syn52178128", new_rows)
+row_reference_set = syn.store(RowSet(schema=schema, rows=[Row(r) for r in new_rows]))
+
+```
+
+You can edit or delete rows using the Python client as well as create entirely new tables or uploading files directly into tables (as we did in the web interface).  You can find more information about using Tables in the Synapse Python client [here](https://python-docs.synapse.org/build/html/Table.html#module-synapseclient.table).
+
 ## Querying Tables 
 
-File upload and download, including annotation setting and provenance recording, is a key function of the Python client.  But another area that will be very commonly used is querying tables and returning results as data frames.  Files are well and good, but many projects contain structured data in tables, so being able to manipulate those tables will be key. Tables can be built up by adding rows and queried with a SQL-like language.  Let's look at an example.  First, find the 'test_table' Synapse ID that you created in the previous tutorial.  In my case it's `syn52178128`.  
-
-Let's try to add some data to this table, the schema we're using is identical to the annotations we applied to new files uploaded in the Files section.  But this table could just as easily be any schema you like.  For example, imaging storing all your files in the Files section, annotating them with key attributes, and then using a table with a schema that stores clinical or phenotypic data.  This is a very common usecase for projects using Synapse.  In a new cell copy and paste the code below and update the Synapse ID to match your
+In addition to adding to a table, we can perform queries that use a SQL-like query language.  We'll start by installing [Pandas](http://pandas.pydata.org/), an excellent framework for working with tabular data.  Make a new cell with this content:
 
 ```
-query = syn.tableQuery('SELECT * FROM syn52178128')
+!pip3 install pandas
+```
+
+Run it, you should see something similar to 'Successfully installed pandas-2.0.3'.
+
+Next, we're going to do a query on the table and return the result as a Pandas dataframe.  Create a new code cell and paste the following, make sure you change to use your Synapse ID for the table you created earlier:
 
 ```
+import pandas as pd
+
+query_results = syn.tableQuery('SELECT * FROM syn52178128')
+df = query_results.asDataFrame()
+print(df)
+```
+
+And you can see this returns a result that is a DataFrame, which can be manipulated with all the goodness Pandas provides:
+
+<img width="1317" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/0f581f63-934f-4dd0-a678-a72b73c4507c">
 
 You can find more information about using Tables in the Synapse Python client [here](https://python-docs.synapse.org/build/html/Table.html#module-synapseclient.table).
 
