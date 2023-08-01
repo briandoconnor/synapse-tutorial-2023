@@ -642,7 +642,6 @@ And the result:
 
 <img width="1317" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/d5b154fd-c8ba-4dc9-925e-5e35ecb0598e">
 
-
 You can edit or delete rows using the Python client as well as create entirely new tables or uploading files directly into tables (as we did in the web interface).  You can find more information about using Tables in the Synapse Python client [here](https://python-docs.synapse.org/build/html/Table.html#module-synapseclient.table).
 
 ## Querying Tables 
