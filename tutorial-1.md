@@ -46,7 +46,7 @@ The quiz is just 15 questions and should take << 15 min to complete.
 <img width="1431" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/1809b51a-e6d9-4048-88ce-5d3ce2204d2e">
 
 > [!IMPORTANT]  
-> Assignment:
+> __Assignment:__
 > We'll pause here to let you finish registering and taking the Synapse quiz.  I can also answer any questions at this time.  Make sure you:
 > - register for Synapse and verify your email
 > - take the quiz and pass it
