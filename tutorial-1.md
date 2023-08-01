@@ -103,30 +103,30 @@ Allows you to find projects, files, datasets, etc of interest.
 
 The search functionality of Synapse is fairly simple and unstructured but it does let you locate key public projects and search through your projects that you have access to.
 
-Sage has built many project data portals built on top of Synapse-based data.  These typically provide much more sophisticated ways of exploring data, for example, the AD Knowledge portal allows you to search for data files, publications, people, etc.  You can see highights of available public portals on the [Synapse homepage](https://synapse.org).
+Sage has built many project data portals built on top of Synapse-based data.  These typically provide much more sophisticated ways of exploring data, for example, the AD Knowledge portal allows you to search for data files, publications, people, etc.  You can see highlights of available public portals on the [Synapse homepage](https://synapse.org).
 
 In today's tutorial we will actually create a mini-data portal that you can share with your collaborators to make exploring your projects' data easier.
 
 ## Creating your first project
 
-You will be dropped into your projects page, you'll see it's empty to start with.
+When you log into Synapse you will be dropped into your projects page, you'll see it's empty to start with.
 
-Synapse projects are the main "containers" for information in Synapse.  They are workspaces where you can store data and share with other collaborators.  They start out as private and sharable with any other Synapse user but can, ultiamtely, be made public when it's time to share your results with the wider community.  
+Synapse projects are the main "containers" for information in Synapse.  They are workspaces where you can store data and share with other collaborators.  They start out as private and sharable with any other Synapse user but can, ultimately, be made public when it's time to share your results with the wider community.  Or you can keep them private and just share with specific collaborators or teams.
 
 <img width="1431" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/ed7cf758-59f1-40d2-aea8-ed3e1803491f">
 
-Click create project, name it, and you'll be taken to the new project page:
+Click "Create a New Project", name it something meaningful to you, and you'll be taken to the new project page.  It looks pretty empty to start but we'll fix that soon!:
 
 <img width="1431" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/54ba2c99-4458-4b23-add0-c1073a657d7b">
 
 ## Adding wiki space content
 
-You can add content to your project in the form of wiki pages.  These are written in a simple language called Markdown and allow you to create complex web pages containing graphics and tables using a simple syntax.
+You can add content to your project in the form of wiki pages.  These are written in a simple language called Markdown and allow you to create simple (or complex!) web pages containing graphics and tables all using a simple syntax that anyone can master.
 
 Start by clicking on the pencil icon to edit the wiki page.  You can then put in the following content:
 
 ```
-## Test Project
+## Test Project <-- Pick a better project name!!
 
 This project space is a test
 
@@ -147,7 +147,7 @@ You can even make tables:
 | Content Cell  | Content Cell  |
 | Content Cell  | Content Cell  |
 
-Finally, you can make links, for example, here's more information on the [Markdown](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax) language.
+Finally, you can make links, for example, here's more information on the [Markdown](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax) language that you can use in Synapse wiki pages.
 
 ```
 
@@ -155,23 +155,23 @@ You can see the result of this nicely formated when you save:
 
 <img width="1192" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/f47d186d-e7fb-4f88-9305-1a35353332da">
 
-The Synapse project space is much more than a single page.  You can create a bunch of different pages, useful if your trying to organize your research results in distinct topics or collaborate with others on different parts of a project.  
+The Synapse project space is much more than a single page.  You can create a bunch of different pages, all related to each other in a hierarchy.  This is useful if your trying to organize your research results in distinct topics or collaborate with others on different parts of a project.  You can think of these wiki pages as Google-doc like but organizable as a hierarchy with linking between them, much easier to explore than a bunch of shared Google doc links!  In that way, it's very akin to Wikipedia.
 
 To create another page, click the "Wiki Tools" button and then click "Add Wiki Subpage":
 
 <img width="1192" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/fa98cbd8-8ebe-48db-90a8-b14916002ddb">
 
-You'll now see a new page (in this case "Testing Page 2") appear in a navigation bar on the left.  In this way you can create multiple pages nested under each other, creating a potentially complex collection of pages with their own respective content.
+You'll now see a new page (in this case I called it "Testing Page 2"... not very creative) appear in a navigation bar on the left.  In this way you can create multiple pages nested under each other, creating a potentially complex collection of pages with their own respective content.
 
 <img width="1259" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/9b458883-6e74-4e60-a738-b8ec0f3300ba">
 
-
 > [!NOTE]  
-> Give it a try, start by creating a few pages and then adding some Markdown content
+> Assignment:
+> Give it a try! Start by creating a wiki page in your new project and then add at least one sub-page.  Try experimenting with adding some Markdown content.
 
 ## Uploading some files
 
-At its core, Synapse is a data sharing platform and the majority data is in the form of files.  You can think of Synapse as a DropBox or Google Drive but focused on the needs of researchers.  Because of that, the platform is focused on what you need for publishing on research results, namely provenance and DOI minting.  Provenance means you can upload a file and then update it with a new version, all while maintaing the history.  DOIs are unique identifiers commonly used in publications to refer to data in a durable way.  You can create DOIs in the Synapse platform for free and these can be made for individual files or whole project spaces.
+At its core, Synapse is a ___data sharing platform___ and the majority data is in the form of files.  You can think of Synapse as a DropBox or Google Drive but focused on the needs of researchers.  Because of that, the platform is focused on what you need for publishing on research results, namely data provenance and DOI minting.  Also keep in mind Synapse is hosted on the AWS cloud environment, so if you want to perform large-scale analysis on the cloud it's the perfect place to host your data.  Provenance means you can upload a file and then update it with a new version, all while maintaining the history.  DOIs are unique identifiers commonly used in publications to refer to data in a durable way.  You can create DOIs in the Synapse platform for _free_ and these can be made for individual files, elements like tables and datasets (more to come on these), or even whole project spaces.
 
 Let's get started by uploading data...
 
@@ -181,26 +181,42 @@ Start by clicking the upload arrow:
 
 <img width="1311" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/21d1712b-82cf-4718-89dd-bf38593dc877">
 
-You'll see an interface like the above.  Pick a file on your compute and try uploading it by dragging the file to the upload area.
+You'll see an interface like the above.  Pick a file on your compute and try uploading it by dragging the file to the upload area.  __Make sure you don't upload anything sensitive!  No passports or credit cards please :-)__
 
-In this case I uploaded a simple index.html file
+If you want to follow along with my examples you can open a shell environment and execute the following to make some tiny files for testing purposes... these obviously aren't real CRAM files but they'll be useful placeholders:
+
+```
+echo '<html><body><h1>Testing</h2></body></html>' > index.html
+for i in 1 2 3 4 5; do
+  echo $i > rna_seq_$i.cram
+  echo $i > wgs_$i.cram
+done;
+```
+
+Just open the folder where you created the above in your file browser, select them, and drag-and-drop them to the upload window.
+
+In the below, I uploaded a simple index.html file:
 
 <img width="1311" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/e5be0815-9f6a-415d-b00b-abc63ce71e56">
 
-When it finishes uploading, click on the file and you'll get a bunch of information
+When it finishes uploading, click on the `index.html` file and you'll get a bunch of information:
 
 <img width="1311" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/17b53db2-39a8-4247-826b-ce294e282da4">
 
 Things to think about:
 - there is no upper limit of data you can upload but generally we ask you to upload <100GB when using our free accounts
 - if you upload lots of data to our platform and then never access it, it might be moved to slower storage
-- you can add annotations on files
+- you can add annotations on files to organize them (we'll see this in a little bit) and use nested folder structures as well
 - we use AWS in us-east-1 (east coast of the US) by default
-- if you want to, you can "bring your own bucket".  This lets you own the storage yourself while managing it within Synapse.  Really useful if you want to store a lot more than 100GB of data on the cloud and need to control it's location (e.g. Google, AWS, in a partiuclar region).  Downside is it requires knowledge of how to set this up in the cloud and your own cloud account which not everyone has.
+- if you want to, you can "bring your own bucket".  This lets you own the storage yourself while managing it within Synapse.  Really useful if you want to store a lot more than 100GB of data on the cloud and need to control it's location (e.g. Google, AWS, in a particular geographic region, etc).  The downside is it requires knowledge of how to set this up in the cloud and your own cloud account which not everyone has.
+
+> [!NOTE]  
+> Assignment:
+> Let's pause here to make sure everyone has caught up to this point.  I'd recommend you create the mock files above and upload them.  Feel free to upload your own files instead/in addition.  _At least make a simple index.html file since we'll use it below_.
 
 ## Sharing with others
 
-So by this point you've created your Synapse project, you've added some documentation in the form of a wiki, and you uploaded a file.  Now it's time to share the project with another Synapse user so you can collaborate.
+So by this point you've created your Synapse project, you've added some documentation in the form of a wiki, and you uploaded some files.  Now it's time to share the project with another Synapse user so you can collaborate!
 
 You'll start by clicking the "Project Tools" button on the project main page:
 
@@ -210,7 +226,7 @@ Then click on "Project Sharing Settings", you see this dialog box:
 
 <img width="1311" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/b2153464-4420-4624-bb42-0921d16fb183">
 
-Now it's time to turn to your neighbor and ask them for their Synapse ID!  You can then add them to your project, try giving them the ability to download and upload to your project.  In this image I've added my other Synapse account (briandoconnor) to my project:
+Now it's time to turn to your neighbor and ask them for their Synapse ID!  You can then add them to your project, try giving them the ability to download and upload to your project.  In this image I've added my other Synapse account (briandoconnor, my _real_ Synapse account) to my project:
 
 <img width="1311" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/05f15ba5-d62b-4dbc-a0ef-61f054e425d3">
 
@@ -236,27 +252,37 @@ Going back to the project space, you can share with Teams in addition to individ
 
 <img width="1311" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/6a970985-2303-4072-96a7-f4db9b266a9c">
 
+> [!NOTE]  
+> Assignment:
+> Let's pause here to give you time to get your neighbor's Synapse ID, add them to your project, then ask another neighbor for their ID to make a team with.  Invite both neighbors to your team and add that team to the project.
+
 ## Uploading new versions of files
 
-Now that you've shared your project, the next step is to upload another version of the file we uploaded earlier.  This is similar to you, or a collabortor, updating a shared result file with a new version.
+Now that you've shared your project, the next step is to upload another version of the file we uploaded earlier.  This is similar to you, or a collaborator, updating a shared result file with a new version.
 
-Start by navigating back to the file you uploaded earlier, click on it and you should see the following:
+Start by navigating back to the `index.html` file you uploaded earlier, click on it and you should see something like the following:
 
 <img width="1311" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/91aff570-a84b-4d13-a2e9-2b24c133a92f">
+
+We need to update the `index.html` file's contents, you can just open it in a text editor or you can use the following command to update it:
+
+```
+echo '<html><body><h1>Testing V2</h2></body></html>' > index.html
+```
 
 Click on the up arrow, this will let you drag and drop a new version of the file to upload:
 
 <img width="1311" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/84a4be97-dba2-4573-b870-0ad05f66f100">
 
-You need to upload a new version of the file, if the file is the same, a new version won't get creted.
+_You need to upload a new version of the file, if the file is the same, a new version won't get created._
 
-I updated the index.html file to include a change, uploaded it, and you can see in the result below the version is now V2:
+I updated the `index.html` file to include a change, uploaded it again, and you can see in the result below the version is now V2:
 
 <img width="1311" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/a5b7d56a-6e14-449a-9d6a-a8e106d32c15">
 
-As a researcher, this easy ability to manage versions of your data is incredibly important.  Whether you're working as a team or researchers on a particular analysis or working indepdently, you will always have multiple iterations of files and results that you will want to track and share.  
+As a researcher, this easy ability to manage versions of your data is incredibly important.  Whether you're working as a team of researchers on a particular analysis or working independently, you will always have multiple iterations of files and results that you will want to track and share.  
 
-In this figure below I clicked on the version link under the name of the file, which opens a "Version History" that you can explore.  You can see there are two versions of this file, the only difference being the header was updated to "Test Summary v2".  I can download either version of the file, or create DOIs for my publication.  This is great since you can publish on a version of the file and continue to upload newer versions.
+In this figure below I clicked on the version link under the name of the file, which opens a "Version History" that you can explore.  You can see there are two versions of this file, the only difference being the header was updated to "Test Summary v2" in my file.  I can download either version of the file, or create DOIs for my publication.  This is great since you can publish on a version of the file and continue to upload newer versions as you perform new analysis.
 
 <img width="1484" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/948316cb-6bd2-4f7d-b97f-05f148ef9ae2">
 
