@@ -1,4 +1,4 @@
-# synapse-tutorial-2023
+# Synapse Tutorials
 
 This repository contains tutorials for using [Synapse.org](https://synapse.org) prepared for the Data Science for [Diverse Scholars in Down Syndrome Research (DS3)](https://docs.google.com/spreadsheets/d/1uE9AS79CKm-6MUHmdXwdBwr-t9vQRmMjQY87ubY966E/edit#gid=1979379610) class held July 24 - August 4, 2023 in Boulder, CO.
 
