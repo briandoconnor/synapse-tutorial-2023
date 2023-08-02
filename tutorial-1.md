@@ -371,40 +371,45 @@ Tables can be complicated, have many columns, rows and be related to other table
 
 At this point, you've created a wiki space for the documentation on your project, you've uploaded a file(s) to the Files section, and you've created a table which works like a database and also includes references to some of your files.  In many ways, you have a collaborative Dropbox + Google Docs + Zenodo + MySQL database combination that's super flexible for your collaborations and let's you version data on the cloud and mint DOIs for just about everything in order to support publishing your awesome results!  And it's all free to use and ready to go!
 
-But Synapse as another feature that I really like that takes your collaborative environment to the next level.  Imagine, if you will, that your collaborative project generates 1,000+ files.  That can be really difficult to navigate, either on the Files tab or the Tables tab if you end up using that feature to organize files.
+But Synapse as another feature that I _really_ like that takes your collaborative environment to the next level.  Imagine, if you will, that your collaborative project generates 1,000+ files.  That can be really difficult to navigate, either on the Files tab or the Tables tab if you end up using that feature to organize files.
 
-What we'd really like is a simple way to browse and facet (think Amazon shopping interface) on files, whether this is used for publishing lots of data, across teams for a collaboration, or even just within your lab.
+What we'd really like is a simple way to browse and facet search (think Amazon shopping interface) on files, whether this is used for publishing lots of data across teams for a collaboration or even just within your lab.
 
-To get started doing this we're going to pick up where we left off with Tables.
+To get started doing this we're going to pick up where we left off with Tables and create something called a "File View".  Click on "Add New..." then click on "Add File View" and you will see the following, I named this "test_table_view" and selected both Files and Tables:
 
-<img width="1496" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/6f3918ec-154c-47ab-806a-fb833d2fc0c1">
+<img width="1225" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/29a8ae8e-978e-45df-9c2c-309dabb0ea1a">
 
-<img width="1496" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/67891602-17aa-440f-abac-e3f89604ce4b">
+Next you will need to set your Scope.  You can actually add files from multiple projects, really helpful if you're working in a large consortium that has many different projects that are each representing a working group or particular dataset and you want to create a file view across them all.  We're going to select the context of this current project, click the "Add container" button, navigate up to all your projects, and select the current project:
 
+<img width="1225" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/f38e8170-4376-4ca1-8fbd-5d07a72829f3">
 
-You can actually add files from multiple projects, really helpful if you're working in a large consortium that has many different projects and you want to create a file view across them.
+And you can see what that looks like when you finish your scope selection:
 
-<img width="1496" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/fbc98c26-6a61-4b06-9470-03500974150f">
+<img width="1225" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/7252c0b7-a113-49b8-81f1-a63f9b181612">
 
-<img width="1496" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/ff0fd21f-d966-4fd9-90d9-3e50cbe0a8e3">
+Click Next and now you can select the fields you want to be able to search on:
 
-<img width="1496" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/b3485927-559d-4694-bbac-e9ebbab619ea">
+<img width="1225" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/793db782-53db-4d97-afe3-3c33fcbc8220">
 
-Now you can select the fields you want to be able to search on:
+Wow, there are a lot of fields!  These are all intrinsic metadata fields for the Synapse system... I selected a bunch above then used the trash icon to remove them since I didn't want them in my faceted browser.  You get down to something much more reasonable:
 
-<img width="1496" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/d56b97ee-fdde-42cf-8f43-6aa0e2f1f4d3">
+<img width="1225" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/8673b7a4-b957-447a-aa2f-8e7581abb99f">
 
-Notice you son't see the columns in your table... strange!  Let's click on "Import Columns" and select the "test_table":
+But I'm not done yet! Notice you son't see the columns in your table e.g. `data_type`, `species`, etc... strange!  Let's click on "Import Columns" and select the "test_table":
 
-<img width="1496" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/44b218d3-2492-4fe3-b570-3921bc7be8fa">
+<img width="1225" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/af05d755-3018-4f55-a304-7dfcd006d5a5">
 
-And now you see the columns we defined ourselves: species, data_type, and file.  I'll select those along with a few other fields that might be useful to search on.  I'll also remove the fields I don't need.  Make sure you select "Facet" as "Values" for the `species` and `data_type` fields:
+And now you see the columns we defined ourselves: species, data_type, my_id, and file.  I'll select those along with a few other fields that might be useful to search on.   Make sure you select "Facet" as "Values" for the `species` and `data_type` fields:
 
-<img width="1496" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/b4c4b54a-5189-469a-9c8e-0da183a5ba0d">
+<img width="1245" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/d162f913-6785-4120-97b6-efdb6fa2bcac">
 
-And here we go:
+And here we go after making the changes:
 
-<img width="1496" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/e2e25431-4b89-4e7a-8e69-00a7727744b5">
+<img width="1245" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/6264b8b3-2a50-4640-a47d-76d3e828908a">
+
+Now click "Finish" and you'll see the following:
+
+<img width="1245" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/9ce202cb-98df-4a48-9852-6deb5f6277ca">
 
 You'll notice a few things:
 
@@ -413,9 +418,9 @@ You'll notice a few things:
 
 The first items is by deisgn but let's fix the second.
 
-Open the files browser.  We previously uploaded index.html, now we're going to upload some more fake RNASeq and WGS files.
+Open the files browser.  We previously uploaded index.html, now we're going to upload some more fake RNASeq and WGS files (if you didn't already previously).
 
-Drag and drop the files `wgs_1.cram` ... `wgs_3.cram` and `rna_seq_1.cram` ... `rna_seq_3.cram`.
+Drag and drop the files `wgs_1.cram` ... `wgs_3.cram` and `rna_seq_1.cram` ... `rna_seq_3.cram`.  All those files you created earlier
 
 <img width="1496" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/0c7feee9-7e01-4d9a-b747-dca33aa0ca61">
 
@@ -433,13 +438,15 @@ Now if we take a look back at the file view we see the following:
 
 <img width="1496" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/78651d0a-4838-4e1c-9b3e-5872176bbfe2">
 
+<img width="1245" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/783b3756-bec3-4e8d-9117-b6359d916ffd">
+
 So now we have the `species` and `data_type` facets that we can filter files on!  This is cool, you can quicky filter this file view for data that you're interested in based on file annotations.  Over time, you can add more files to your project and they will show up here.  This is designed to be a live view that can be dynamically added to over time.  It's a great way to be able to filter your active files quickly and easily.
 
 For example, I uploaded another RNASeq file (`rna_seq_4.cram`), annotated it with the same attributes, and then it automatically shows up in the file view!
 
 <img width="1496" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/f3987b21-6a36-45f8-a246-5d20e354a6db">
 
-This all might seem like a trvial thing, but when you're working on a large collaboration with thousands of files this is a great way to organize and slide-and-dice data between you and your collaborators.  Beyond just the simple folders and sub-folders approach often used in shared workspaces.
+This all might seem like a trvial thing, but when you're working on a large collaboration with thousands of files this is a great way to organize and slide-and-dice data between you and your collaborators.  Beyond just the simple folders and sub-folders approach often used in shared workspaces (and that doesn't really scale well when you have __lots__ of files).
 
 ## Publishing
 
