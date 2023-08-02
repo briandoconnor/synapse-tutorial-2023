@@ -334,7 +334,7 @@ File support in Synapse is great to upload and organize results.  But often time
 
 Table structure can be created from an Excel or Google Sheets document by first saving as a `.tsv` or `.csv` file.  You can then upload these to Synapse which will turn it into tables behind the scenes.
 
-<img width="519" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/df555d6e-de18-4d2b-ac6d-1c9e93f77c47">
+<img width="550" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/b565284d-0216-44da-86a3-2770577b29a4">
 
 Click the upload button to upload the .tsv version of this file:
 
