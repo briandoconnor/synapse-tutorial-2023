@@ -438,8 +438,6 @@ Now if we take a look back at the file view we see the following:
 
 <img width="1496" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/78651d0a-4838-4e1c-9b3e-5872176bbfe2">
 
-<img width="1245" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/783b3756-bec3-4e8d-9117-b6359d916ffd">
-
 So now we have the `species` and `data_type` facets that we can filter files on!  This is cool, you can quicky filter this file view for data that you're interested in based on file annotations.  Over time, you can add more files to your project and they will show up here.  This is designed to be a live view that can be dynamically added to over time.  It's a great way to be able to filter your active files quickly and easily.
 
 For example, I uploaded another RNASeq file (`rna_seq_4.cram`), annotated it with the same attributes, and then it automatically shows up in the file view!
