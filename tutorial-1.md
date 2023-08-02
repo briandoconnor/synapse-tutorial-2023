@@ -6,7 +6,7 @@
 * have my own notebook on my laptop just in case mybinder or collab don't work
 * spell check tutorial  
 
-# Tutorial 1: Synapse Basics
+# Tutorial 1: Synapse Web Basics
 
 In this tutorial we're going to learn about the Synapse web user interface (https://synapse.org) and it's most key features.  By the end of this tutorial you will have a Synapse account, be able to create projects, upload/download data, and create tables/datasets to store and share your results.  You can then use this account to collaborate with others and publish your research methods and results.  
 
@@ -527,7 +527,7 @@ We can also make datasets available for anonymous reviewer access, making it pos
 > __Assignment:__
 > Give it a try, make your project public!
 
-## Next Steps
+# Next Steps
 
 We just really scratched the surface on the features of Synapse but we did go over some of the key ones for using the platform to collaborate.  In the [next Tutorial](tutorial-2.md) we'll explore how to do many of the same things but programmatically using Python.
 
