@@ -356,12 +356,19 @@ Now that the table was created, you can edit. Click on the table and, in the det
 
 Like files, tables can have wiki spaces, can be versioned, and can have DOIs created.
 
-Tables can be complicated, have many columns, rows and be related to other tables.  When you publish on your data, you may wish to create a snapshot.  This allows you to crate a snapshot of tables at a specific moment in time, for referencing in publications and sharing.
+Tables can be complicated, have many columns, rows and be related to other tables.  When you publish on your data, you may wish to create a snapshot.  This allows you to crate a snapshot of tables at a specific moment in time, for referencing in publications and sharing.  Alternatively, you can use a Dataset to accomplish the same thing but with more flexibility with what you include in the snapshot.
 
 <img width="1496" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/b19efc35-9408-4e28-83e9-cee51cef6189">
 
 > [!NOTE]  
-> To learn more about Tables... https://help.synapse.org/docs/Organizing-Data-With-Tables.2011038095.html
+> To learn more about Tables see the very detailed [Synapse documentation]( https://help.synapse.org/docs/Organizing-Data-With-Tables.2011038095.html)
+
+> [!IMPORTANT]  
+> __Assignment:__
+> We've covered a lot of ground in this section and tables are very powerful with a lot of features we just scratched the surface on.  Take a few minutes to walk through the above and setup your table:
+> - create the table from the .tsv file
+> - customize it's schema with the sizes and file as a string example I gave
+> - then go into the interface and edit it, try updating my Synapse file IDs to some of your file IDs for example 
 
 ## Generating a File Browser
 
