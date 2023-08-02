@@ -332,11 +332,11 @@ You can now see the version 2 of the index.html file has a clear relationship to
 
 File support in Synapse is great to upload and organize results.  But often times, you may have tabular data that you want to share and make queryable (think clinical, biospecimen, phenotypic, or other data types).  In many ways, this functions as a database, allowing you to do powerful queries on your data directly (vs. just storing files that you need to download to actually search).
 
-Table structure can be created from an Excel or Google Sheets document by first saving as a `.tsv` or `.csv` file.  You can then upload these to Synapse which will turn it into tables behind the scenes.
+Table structure can be created from an Excel or Google Sheets document by first saving as a `.tsv` or `.csv` file.  You can then upload these to Synapse which will turn it into tables behind the scenes.  Below is a simple sample file, you can access it on Google [here](https://docs.google.com/spreadsheets/d/17Qef59nQL5r5FfR94QwNjCwtamAMbElG03BtyKu2jgY/edit#gid=0).  Open it and download it as a `.tsv` file:
 
 <img width="550" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/b565284d-0216-44da-86a3-2770577b29a4">
 
-Click the upload button to upload the .tsv version of this file:
+Now, in the table page, click the upload button to upload the `.tsv` version of this file.  Synpase will recognize it as a table and give you some options:
 
 <img width="1492" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/41886065-17af-49b2-8648-086816b8745e">
 
