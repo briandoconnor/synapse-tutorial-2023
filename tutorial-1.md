@@ -352,15 +352,7 @@ In this case, I changed the "file" column to be type "String" to make it easier 
 
 Now that the table was created, you can edit. Click on the table and, in the detail view, click on the pencil icon to edit the table:
 
-<img width="1440" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/cd17e27f-4de0-4eab-a16c-1db4f48f603f">
-
-I'll upload a mock RNAseq and WGS file for the files column in these rows.  Click on the upload icon to the right of the file field:
-
-<img width="1440" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/5827645a-ced5-41a1-afd6-75bef077e4f4">
-
-You can now see the full table populated including the file column containing `.cram` files.
-
-<img width="1496" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/2a57779c-a9f7-47c6-b026-566559509d83">
+<img width="1225" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/e9063d5e-6221-4e43-97e2-fee0f910076a">
 
 Like files, tables can have wiki spaces, can be versioned, and can have DOIs created.
 
