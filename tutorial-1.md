@@ -1,13 +1,10 @@
 # TODO:
 
-* remove "ID" from my upload table
 * make sure I annotate files uploaded and tables created
-* I think I want to upload some fake crams in the file upload step
 * fill in the assignment sections
 * fill in documentation links for more information
 * have my own notebook on my laptop just in case mybinder or collab don't work
 * spell check tutorial  
-* I need to remove the table file uploads... it's confusing and they don't work well...
 
 # Tutorial 1: Synapse Basics
 
