@@ -409,7 +409,7 @@ And here we go after making the changes:
 
 Now click "Finish" and you'll see the following:
 
-<img width="1245" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/257069000-e2e25431-4b89-4e7a-8e69-00a7727744b5">
+<img width="1245" alt="image" src="https://user-images.githubusercontent.com/1730584/257069000-e2e25431-4b89-4e7a-8e69-00a7727744b5.png">
 
 You'll notice a few things:
 
