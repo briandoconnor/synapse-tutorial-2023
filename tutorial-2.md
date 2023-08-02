@@ -175,7 +175,7 @@ schema = syn.get('syn52228001')
 print (schema)
 
 # now store
-row_reference_set = syn.store(RowSet(schema=schema, rows=[Row(r) for r in new_rows]))
+row_reference_set = syn.store(RowSet(schema=schema, rows=[Row(r) for r in data]))
 
 ```
 
