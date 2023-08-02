@@ -457,7 +457,7 @@ This all might seem like a trvial thing, but when you're working on a large coll
 
 ## Publishing
 
-Now that we've explored how you can use Synapse to work on your research and collaborate in small (or large) groups we will turn to how you can use the platform to publish.  
+Now that we've explored how you can use Synapse to work on your research and collaborate in small (or large) groups we will turn to how you can use the platform to publish data publicly.  
 
 We'll walk through each of the following activities:
 - Create a Dataset
@@ -505,7 +505,7 @@ You can drop in the URL: https://doi.org/10.7303/syn52190980.1 into your publica
 > Synapse supports DOI minting for Datasets, tables, files and handles versioning as well.  Give the following a try:
 > - make a new Dataset using a few files, create a stable version from the draft, and assign it a DOI
 > - pick a file and make a DOI for V1
-> - look through the other entity times we crated today and see what you can mint DOIs for... they're everywhere which is great for citability! 
+> - look through the other entity times we crated today and see what you can mint DOIs for... they're everywhere which is great for citability!
 
 ### Sharing Data Publicly
 
@@ -523,9 +523,16 @@ You can't actually give download permissions to anyone on the web (e.g. no Synap
 
 We can also make datasets available for anonymous reviewer access, making it possible to safely share data during the publication review process.  Reach out to us if you're interested!
 
-## Assignment
+> [!IMPORTANT]  
+> __Assignment:__
+> Give it a try, make your project public!
 
-- Give them a problem scenario to solve
+## Next Steps
+
+We just really scratched the surface on the features of Syanpse but we did go over some of the key ones for using the platform to collaborate.  In the next Tutorial we'll explore how to do many of the same things but programmatically using Python.
+
+> [!NOTE]  
+> There is a __ton__ of documentation on Synapse.org, take a look [here](https://help.synapse.org/docs/)!  We also have a [helpdesk](https://sagebionetworks.jira.com/servicedesk/customer/portal/9) that is a good way to get help if you don't find the answer in our docs.
 
 # Tutorial 2: Programmatic Access
 
