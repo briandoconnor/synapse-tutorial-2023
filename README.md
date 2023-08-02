@@ -1,5 +1,7 @@
 # Synapse Tutorials
 
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/briandoconnor/synapse-tutorial-2023/HEAD)
+
 This repository contains tutorials for using [Synapse.org](https://synapse.org) prepared for the Data Science for [Diverse Scholars in Down Syndrome Research (DS3)](https://docs.google.com/spreadsheets/d/1uE9AS79CKm-6MUHmdXwdBwr-t9vQRmMjQY87ubY966E/edit#gid=1979379610) class held July 24 - August 4, 2023 in Boulder, CO.
 
 * [Tutorial 1](tutorial-1.md) shows how to use the web interface to accomplish most the tasks a researcher would use Synapse for including data upload and sharing as well as team collaboration.
