@@ -26,7 +26,7 @@ You then will need to take the "Synapse Pledge", which includes agreeing to gove
 
 ## Taking the quiz so you can upload
 
-You need to become a "certified" user in order to upload data to Synapse.  You can do this by taking the quiz [here](https://www.synapse.org/#!Quiz:Certification)
+You need to become a "certified" user, documentation [here](https://help.synapse.org/docs/Synapse-User-Account-Types.2007072795.html#SynapseUserAccountTypes-CertifiedUser), in order to upload data to Synapse.  You can do this by taking the quiz [here](https://www.synapse.org/#!Quiz:Certification)
 
 <img width="1431" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/0b19c08b-68ee-4fc5-886d-80749a0814ee">
 
