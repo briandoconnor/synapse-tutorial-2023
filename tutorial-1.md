@@ -1,11 +1,3 @@
-# TODO:
-
-* make sure I annotate files uploaded and tables created
-* fill in the assignment sections
-* fill in documentation links for more information
-* have my own notebook on my laptop just in case mybinder or collab don't work
-* spell check tutorial  
-
 # Tutorial 1: Synapse Web Basics
 
 In this tutorial we're going to learn about the Synapse web user interface (https://synapse.org) and it's most key features.  By the end of this tutorial you will have a Synapse account, be able to create projects, upload/download data, and create tables/datasets to store and share your results.  You can then use this account to collaborate with others and publish your research methods and results.  
