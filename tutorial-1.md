@@ -254,7 +254,7 @@ Going back to the project space, you can share with Teams in addition to individ
 
 > [!IMPORTANT]  
 > __Assignment:__
-> Let's pause here to give you time to
+> Let's pause here to give you time to:
 > - get your neighbor's Synapse ID
 > - add them directly to your project
 > - then ask another neighbor for their ID and make a team
@@ -262,33 +262,37 @@ Going back to the project space, you can share with Teams in addition to individ
 
 ## Uploading new versions of files
 
-Now that you've shared your project, the next step is to upload another version of the file we uploaded earlier.  This is similar to you, or a collaborator, updating a shared result file with a new version.
+Now that you've shared your project, the next step is to upload another version of the file we uploaded earlier.  This is similar to you, or a collaborator, updating a shared result file with a new version after running an updated algorithm.
 
 Start by navigating back to the `index.html` file you uploaded earlier, click on it and you should see something like the following:
 
 <img width="1311" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/91aff570-a84b-4d13-a2e9-2b24c133a92f">
 
-We need to update the `index.html` file's contents, you can just open it in a text editor or you can use the following command to update it:
+We need to update the `index.html` file's contents, you can just open the local copy of the file in a text editor or you can use the following command to update it:
 
 ```
 echo '<html><body><h1>Testing V2</h2></body></html>' > index.html
 ```
 
-Click on the up arrow, this will let you drag and drop a new version of the file to upload:
+Click on the up arrow, this will let you drag and drop the new version of the file to upload:
 
 <img width="1311" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/84a4be97-dba2-4573-b870-0ad05f66f100">
 
-_You need to upload a new version of the file, if the file is the same, a new version won't get created._
+_You need to upload a new version of the file, if the file is the same, a new version on Synapse won't get created.  So make sure you edit your local index.html before uploading._
 
 I updated the `index.html` file to include a change, uploaded it again, and you can see in the result below the version is now V2:
 
 <img width="1311" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/a5b7d56a-6e14-449a-9d6a-a8e106d32c15">
 
-As a researcher, this easy ability to manage versions of your data is incredibly important.  Whether you're working as a team of researchers on a particular analysis or working independently, you will always have multiple iterations of files and results that you will want to track and share.  
+As a researcher, this easy ability to manage versions of your data is incredibly important.  Whether you're working as a team of researchers on a particular analysis or working independently, you will always have multiple iterations of result files that you will want to track and share.  
 
-In this figure below I clicked on the version link under the name of the file, which opens a "Version History" that you can explore.  You can see there are two versions of this file, the only difference being the header was updated to "Test Summary v2" in my file.  I can download either version of the file, or create DOIs for my publication.  This is great since you can publish on a version of the file and continue to upload newer versions as you perform new analysis.
+In this figure below I clicked on the version link under the name of the file, which opens a "Version History" that you can explore.  You can see there are two versions of this file, the only difference being the header was updated to "Test Summary v2" in my file.  I can download either version of the file, or create DOIs for my publication.  This is great since you can publish on a previous version of the file via a DOI and continue to upload newer versions as you perform subsequent rounds of analysis.
 
 <img width="1484" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/948316cb-6bd2-4f7d-b97f-05f148ef9ae2">
+
+> [!IMPORTANT]  
+> __Assignment:__
+> Let's pause here to give you time to upload your new file version and see your index.html file now has multiple versions.
 
 ## Provenance
 
@@ -320,11 +324,15 @@ You can now see the version 2 of the index.html file has a clear relationship to
 
 <img width="284" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/78514e9d-3474-4d65-9408-1a0670464b42">
 
+> [!IMPORTANT]  
+> __Assignment:__
+> OK, it's time for you to try this out.  Go ahead and follow the steps above to update the provenance of index.html V2 to show it's the result of V1 transformed by whatever editor you used.
+
 ## Using Tables
 
-File support in Synapse is great to upload and orgnize results.  But often times, you may have tabular data that you want to share and make queriable.  In many ways, this functions as a database, allowing you to do powerful queries on your data directly (vs. just storing files that you need to download to actually search).
+File support in Synapse is great to upload and organize results.  But often times, you may have tabular data that you want to share and make queryable (think clinical, biospecimen, phenotypic, or other data types).  In many ways, this functions as a database, allowing you to do powerful queries on your data directly (vs. just storing files that you need to download to actually search).
 
-Table structure can be created from an Excel or Google Sheets document by first saving as a .tsv or .csv file.  You can then upload these to Synapse which will turn it into tables behind the scenes.
+Table structure can be created from an Excel or Google Sheets document by first saving as a `.tsv` or `.csv` file.  You can then upload these to Synapse which will turn it into tables behind the scenes.
 
 <img width="519" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/df555d6e-de18-4d2b-ac6d-1c9e93f77c47">
 
