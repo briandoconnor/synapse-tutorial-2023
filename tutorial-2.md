@@ -1,4 +1,4 @@
-# Tutorial 2: Programmatic Access
+# Tutorial 2: Programmatic Synapse Access
 
 Everything we've done to this point has been through the Synapse web interface.  This is great since it's really easy to get started but when you try to use Synapse for large projects with thousands of files, things get overwhelming very quickly.
 
