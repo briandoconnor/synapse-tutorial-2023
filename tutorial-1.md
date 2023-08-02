@@ -446,6 +446,15 @@ For example, I uploaded another RNASeq file (`rna_seq_4.cram`), annotated it wit
 
 This all might seem like a trvial thing, but when you're working on a large collaboration with thousands of files this is a great way to organize and slide-and-dice data between you and your collaborators.  Beyond just the simple folders and sub-folders approach often used in shared workspaces (and that doesn't really scale well when you have __lots__ of files).
 
+> [!IMPORTANT]  
+> __Assignment:__
+> We've covered a lot of ground through the creation of a File View, annotating a bunch of files with Labels, and then using that to populate facets in the File View that you can search on.  Let's take a moment to get everyone caught up.  Make sure you have:
+> - uploaded all those files we generated
+> - annotate these files with labels, at least do a few files and include a `species` and `data_type` (make up the values)
+> - setup your File View with the correct fields including `species` and `data_type`
+> - show that you can facet search using these annotations in the File View
+> - In the next tutorial we'll use a script to do all this heavy lifting which will make it possible to have very large File Views
+
 ## Publishing
 
 Now that we've explored how you can use Synapse to work on your research and collaborate in small (or large) groups we will turn to how you can use the platform to publish.  
