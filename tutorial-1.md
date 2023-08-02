@@ -365,13 +365,13 @@ Tables can be complicated, have many columns, rows and be related to other table
 > We've covered a lot of ground in this section and tables are very powerful with a lot of features we just scratched the surface on.  Take a few minutes to walk through the above and setup your table:
 > - create the table from the .tsv file
 > - customize it's schema with the sizes and file as a string example I gave
-> - then go into the interface and edit it, try updating my Synapse file IDs to some of your file IDs for example 
+> - then go into the interface and edit it, try updating my Synapse file IDs to some of your file IDs for example
 
 ## Generating a File Browser
 
-At this point, you've created a wiki space for the documentation on your project, you've uploaded a file to the Files section, and you've created a table which works like a database and also includes additional files.  In many ways, you have a collaborative Dropbox + Google Docs + MySQL database combination that's super flexible for your collaborations and let's you version and mint DOIs for just about everything in order to support publishing your awesome results!  And it's all free to use and ready to go!
+At this point, you've created a wiki space for the documentation on your project, you've uploaded a file(s) to the Files section, and you've created a table which works like a database and also includes references to some of your files.  In many ways, you have a collaborative Dropbox + Google Docs + Zenodo + MySQL database combination that's super flexible for your collaborations and let's you version data on the cloud and mint DOIs for just about everything in order to support publishing your awesome results!  And it's all free to use and ready to go!
 
-But Synapse as another feature that I really like that takes your collabortive environment to the next level.  Imagine, if you will, that your collaborative project generates 1,000 files.  That can be really difficult to navigate, either on the Files tab or the Tables tab if you end up using that feature to organize files.
+But Synapse as another feature that I really like that takes your collaborative environment to the next level.  Imagine, if you will, that your collaborative project generates 1,000+ files.  That can be really difficult to navigate, either on the Files tab or the Tables tab if you end up using that feature to organize files.
 
 What we'd really like is a simple way to browse and facet (think Amazon shopping interface) on files, whether this is used for publishing lots of data, across teams for a collaboration, or even just within your lab.
 
@@ -398,7 +398,7 @@ Notice you son't see the columns in your table... strange!  Let's click on "Impo
 
 <img width="1496" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/44b218d3-2492-4fe3-b570-3921bc7be8fa">
 
-And now you see the columns we defined ourselves: species, data_type, and file.  I'll select those along with a fiew other fields that might be useful to search on.  I'll also remove the fields I don't need.  Make sure you select "Facet" as "Values" for the `species` and `data_type` fields:
+And now you see the columns we defined ourselves: species, data_type, and file.  I'll select those along with a few other fields that might be useful to search on.  I'll also remove the fields I don't need.  Make sure you select "Facet" as "Values" for the `species` and `data_type` fields:
 
 <img width="1496" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/b4c4b54a-5189-469a-9c8e-0da183a5ba0d">
 
@@ -486,7 +486,7 @@ We can now see the DOI was created:
 
 You can drop in the URL: https://doi.org/10.7303/syn52190980.1 into your publication, most publishers recognize DOIs as a means of referencing data in a stable and durable way that is perfect for publications.
 
-### Sharing Data Publicaly
+### Sharing Data Publicly
 
 One last task, it's great that we were able to create a Dataset and mint a DOI that could be used for publications.  But what about researchers actually accessing the files, for example `wgs_3.cram`?
 
