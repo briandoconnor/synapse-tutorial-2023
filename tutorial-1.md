@@ -420,11 +420,11 @@ The first items is by deisgn but let's fix the second.
 
 Open the files browser.  We previously uploaded index.html, now we're going to upload some more fake RNASeq and WGS files (if you didn't already previously).
 
-Drag and drop the files `wgs_1.cram` ... `wgs_3.cram` and `rna_seq_1.cram` ... `rna_seq_3.cram`.  All those files you created earlier
+Drag and drop the files `wgs_1.cram` ... `wgs_3.cram` and `rna_seq_1.cram` ... `rna_seq_3.cram`.  Upload all those files you created earlier (if you haven't already).
 
 <img width="1496" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/0c7feee9-7e01-4d9a-b747-dca33aa0ca61">
 
-Click on the label icon, now you can edit the annotations assocaited with each file, add a `species` key with a value like mouse and a `data_type` key with a value of `html` for the index.html, `rnaseq` for RNASeq files, and `wgs` for WGS files.
+Now, for each file, click on it and then click on the label icon. Now you can edit the annotations assocaited with each file, add a `species` key with a value like mouse and a `data_type` key with a value of `html` for the index.html, `rnaseq` for RNASeq files, and `wgs` for WGS files.
 
 You'll have to do this for each file you upload, in a future tutorial we'll use a Python script to do this.  If you have thousands of files you can see how this would be a big help!
 
