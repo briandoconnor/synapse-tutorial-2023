@@ -336,19 +336,19 @@ Table structure can be created from an Excel or Google Sheets document by first 
 
 <img width="550" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/b565284d-0216-44da-86a3-2770577b29a4">
 
-Now, in the table page, click the upload button to upload the `.tsv` version of this file.  Synpase will recognize it as a table and give you some options:
+Now, in the table page, click the upload button to upload the `.tsv` version of this file.  Synpase will recognize it as a table and give you some options, we're going to stick with the defaults:
 
-<img width="1492" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/41886065-17af-49b2-8648-086816b8745e">
+<img width="1225" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/7c3037fd-5b1d-47fa-90de-4c86ba9c3332">
 
-You can name it, I'll call it `test_table`:
+You can then name it, I'll call it `test_table`:
 
 <img width="1492" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/3aa51557-7fea-4a2e-a173-3b643aa84564">
 
-Synapse will guess the types of each column, but you can customize that by clicking on "Schema Options":
+Synapse will guess the types of each column, but you can customize that by clicking on "Schema Options". Let's do that and change the file column to something easier to deal with (a String).  I'm also going to make the columns "bigger" since we want space to store species and data_types that are up to 256 characters long.  If you're following along with me, make your schema look like the following:
 
-<img width="1492" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/d0ac2595-8e7f-4699-ac9c-17e8ab6bf695">
+<img width="1225" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/c31dffed-5c24-49b1-9542-e9b143d2d943">
 
-In this case, I changed the "file" column to be "File" type.
+In this case, I changed the "file" column to be type "String" to make it easier to work with.
 
 Now that the table was created, you can edit. Click on the table and, in the detail view, click on the pencil icon to edit the table:
 
