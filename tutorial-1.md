@@ -500,6 +500,13 @@ We can now see the DOI was created:
 
 You can drop in the URL: https://doi.org/10.7303/syn52190980.1 into your publication, most publishers recognize DOIs as a means of referencing data in a stable and durable way that is perfect for publications.
 
+> [!IMPORTANT]  
+> __Assignment:__
+> Synapse supports DOI minting for Datasets, tables, files and handles versioning as well.  Give the following a try:
+> - make a new Dataset using a few files, create a stable version from the draft, and assign it a DOI
+> - pick a file and make a DOI for V1
+> - look through the other entity times we crated today and see what you can mint DOIs for... they're everywhere which is great for citability! 
+
 ### Sharing Data Publicly
 
 One last task, it's great that we were able to create a Dataset and mint a DOI that could be used for publications.  But what about researchers actually accessing the files, for example `wgs_3.cram`?
