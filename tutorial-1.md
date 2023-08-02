@@ -165,13 +165,13 @@ You'll now see a new page (in this case I called it "Testing Page 2"... not very
 
 <img width="1259" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/9b458883-6e74-4e60-a738-b8ec0f3300ba">
 
-> [!NOTE]  
-> Assignment:
+> [!IMPORTANT]  
+> __Assignment:__
 > Give it a try! Start by creating a wiki page in your new project and then add at least one sub-page.  Try experimenting with adding some Markdown content.
 
 ## Uploading some files
 
-At its core, Synapse is a ___data sharing platform___ and the majority data is in the form of files.  You can think of Synapse as a DropBox or Google Drive but focused on the needs of researchers.  Because of that, the platform is focused on what you need for publishing on research results, namely data provenance and DOI minting.  Also keep in mind Synapse is hosted on the AWS cloud environment, so if you want to perform large-scale analysis on the cloud it's the perfect place to host your data.  Provenance means you can upload a file and then update it with a new version, all while maintaining the history.  DOIs are unique identifiers commonly used in publications to refer to data in a durable way.  You can create DOIs in the Synapse platform for _free_ and these can be made for individual files, elements like tables and datasets (more to come on these), or even whole project spaces.
+At its core, Synapse is a ___data sharing platform___ and the majority data is in the form of files.  You can think of Synapse as a DropBox or Google Drive but focused on the needs of researchers.  Because of that, the platform is focused on what you need for sharing and publishing on research results, namely data provenance and DOI minting.  Also keep in mind Synapse is hosted on the AWS cloud environment, so if you want to perform large-scale analysis on the cloud it's the perfect place to host your data.  Provenance means you can upload a file and then update it with a new version, all while maintaining the history.  DOIs are unique identifiers commonly used in publications to refer to data in a durable way.  You can create DOIs in the Synapse platform for _free_ and these can be made for individual files, elements like tables and datasets (more to come on these), or even whole project spaces.
 
 Let's get started by uploading data...
 
@@ -208,10 +208,10 @@ Things to think about:
 - if you upload lots of data to our platform and then never access it, it might be moved to slower storage
 - you can add annotations on files to organize them (we'll see this in a little bit) and use nested folder structures as well
 - we use AWS in us-east-1 (east coast of the US) by default
-- if you want to, you can "bring your own bucket".  This lets you own the storage yourself while managing it within Synapse.  Really useful if you want to store a lot more than 100GB of data on the cloud and need to control it's location (e.g. Google, AWS, in a particular geographic region, etc).  The downside is it requires knowledge of how to set this up in the cloud and your own cloud account which not everyone has.
+- if you want to, you can "bring your own bucket".  This lets you own the storage yourself while managing it within Synapse.  Really useful if you want to store _a lot_ more than 100GB of data on the cloud and need to control it's location (e.g. Google, AWS, in a particular geographic region, etc).  The downside is it requires knowledge of how to set this up in the cloud and your own cloud account which not everyone has.
 
-> [!NOTE]  
-> Assignment:
+> [!IMPORTANT]  
+> __Assignment:__
 > Let's pause here to make sure everyone has caught up to this point.  I'd recommend you create the mock files above and upload them.  Feel free to upload your own files instead/in addition.  _At least make a simple index.html file since we'll use it below_.
 
 ## Sharing with others
@@ -226,7 +226,7 @@ Then click on "Project Sharing Settings", you see this dialog box:
 
 <img width="1311" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/b2153464-4420-4624-bb42-0921d16fb183">
 
-Now it's time to turn to your neighbor and ask them for their Synapse ID!  You can then add them to your project, try giving them the ability to download and upload to your project.  In this image I've added my other Synapse account (briandoconnor, my _real_ Synapse account) to my project:
+Now it's time to turn to your neighbor and ask them for their Synapse ID!  You can then add them to your project, try giving them the ability to download from your project.  In this image I've added my other Synapse account (briandoconnor, my _real_ Synapse account) to my project:
 
 <img width="1311" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/05f15ba5-d62b-4dbc-a0ef-61f054e425d3">
 
@@ -236,7 +236,7 @@ You can add as many users as you want.  But as your collaborations get large, yo
 
 <img width="1311" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/cda5c418-a8d3-49df-ad87-040b98967a85">
 
-And now I can add people to the team, such as my other Synapse username briandoconnor.
+And now I can add people to the team, in my case, my other Synapse username `briandoconnor`.
 
 <img width="1311" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/345061cc-17a3-4f7b-8342-a39954a34340">
 
@@ -252,9 +252,13 @@ Going back to the project space, you can share with Teams in addition to individ
 
 <img width="1311" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/6a970985-2303-4072-96a7-f4db9b266a9c">
 
-> [!NOTE]  
-> Assignment:
-> Let's pause here to give you time to get your neighbor's Synapse ID, add them to your project, then ask another neighbor for their ID to make a team with.  Invite both neighbors to your team and add that team to the project.
+> [!IMPORTANT]  
+> __Assignment:__
+> Let's pause here to give you time to
+> - get your neighbor's Synapse ID
+> - add them directly to your project
+> - then ask another neighbor for their ID and make a team
+> - invite both neighbors to your team and add that team to the project (you can remove the individual user you added previously, the team replaces it!)
 
 ## Uploading new versions of files
 
