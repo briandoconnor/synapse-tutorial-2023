@@ -33,6 +33,8 @@ _In the rest of the demo below I'm going to upload biospecimen annotations, so I
 
 The [Data Curator App (DCA)](https://dca.app.sagebionetworks.org/) is a tool developed at Sage to ensure that data submitted for a project like INCLUDE complies with the data model developed for the project.  More simply, it's making sure people don't forget to fill in required columns for the information they're submitted to INCLUDE.
 
+For this demo, we're going to submit some [Biospecimen](https://docs.google.com/spreadsheets/d/1omhtVW51noNfNfX_wiu-9HEyQ7t9Df297oub8YoDq7k/edit#gid=1910032073) data to INCLUDE via the [example Synapse Project](https://www.synapse.org/#!Synapse:syn52171867/files/) and validated using DCA.
+
 <img width="1432" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/91cdcda3-b5a7-410f-a3cd-34329207e93a">
 
 Click next
@@ -51,10 +53,7 @@ Select biospecimen template:
 
 <img width="1432" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/4dc1ccc5-b5b3-407a-b79f-1de2463bfd5f">
 
-It generates a template for you to submit data:
-
-
-You fill in this google sheet and download as CSV... note I left out a required field:
+It generates a template for you to submit data. You fill in this google sheet and download as CSV... note I left out a required field:
 
 <img width="539" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/c598bc47-0c20-47a4-a3aa-25dfffee281a">
 
