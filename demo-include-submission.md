@@ -89,7 +89,7 @@ And you can see the manifest stored on Synapse:
 
 <img width="1430" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/57923fe2-d473-4230-ac5f-1f5dfec89cb4">
 
-##Data Release to Portal
+## Data Release to Portal
 
 And that's really it for you!  Behind the scenes the INCLUDE team takes these submitted and validated files, transforms them to FHIR (a data exchange standard), and populates the portal on a regular basis.
 
