@@ -8,4 +8,6 @@ This repository contains tutorials for using [Synapse.org](https://synapse.org) 
 
 * [Tutorial 2](tutorial-2.md) shows very similar tasks but done programmatically with the Synapse Python client in a Notebook environment.
 
+* [Demo - Data Submission to INCLUDE](demo-include-submission.md) a demo walkthrough of submitting data to the [INCLUDE DCC portal](https://portal.includedcc.org/dashboard).
+
 While we cover a lot of ground in these tutorials there is a lot of advanced functionality in Synapse that we couldn't fit into the tutorials.  Synapse has extensive [documentation](https://help.synapse.org/docs/) online where you can learn more and a [helpdesk](https://sagebionetworks.jira.com/servicedesk/customer/portal/9) for asking questions.
