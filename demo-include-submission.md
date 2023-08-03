@@ -1,21 +1,14 @@
 # Demo: INCLUDE DCC Submission
 
-## Demo Instructions
-
-* Open Synapse and show the [INCLUDE Test Project C](https://www.synapse.org/#!Synapse:syn52171867/files/) - which can represent an INCLUDE Contributor site 
-* Navigate to DCA ([this is the production instance](https://dca.app.sagebionetworks.org/))
-* Within DCA use the DCA Demo DCC - this is equivalent to an INCLUDE DCC Hub 
-* Select the INCLUDE Test Project C 
-* Find the Biospecimen_Heart folder - it should be empty.  
-* Select the Biospecimen Template
-* Download - and in here you add a few lines of metadata - you can start with a blank space in the Tissue Status column (see screen shot) to show an error during validation
-* Download as a CSV
-* Navigate back to DCA - browse and upload the CSV you just saved
-* Click Validate - show the error that you get.  
-* Navigate back to the Google sheet and correct the error, save as CSV, upload, validate and submit.
-* At this point you can go back to the Synapse project and show that the CVS has been submitted.  
+This demo walks you through the process that data submitters to the [INCLUDE DCC](http://includedcc.org) follow in order to share data through the portal.  The goal is to give you an overview of the process, we'll work with you directly when it comes time to submit your data to INCLUDE.  [Contact us](https://app.smartsheet.com/b/form/514745159a004c2e987fff0aa16ceaac) to learn more!
 
 ## Submitter Instructions
+
+The first place to stop is the [INCLUDE Data Contributor Guide](https://docs.google.com/spreadsheets/d/1omhtVW51noNfNfX_wiu-9HEyQ7t9Df297oub8YoDq7k/edit#gid=2131231137), a Google doc prepared by the project to walk you through the process as a data submitter.
+
+<img width="1074" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/7c15dba5-109c-494f-b3b2-aae8178abc7c">
+
+The submission process starts with a submitter interview by the DCC team to explain the guide and setup a Synapse Project for your files.
 
 ## Submitter Synapse Project
 
@@ -25,9 +18,18 @@ Here's an [example Synapse Project](https://www.synapse.org/#!Synapse:syn5217186
 
 ## Upload Data 
 
+The process of submitting starts with uploading data files to your Synapse Project.  This includes files like RNASeq, WGS, etc, whatever data files you will ultimately be submitting to the project.  In some cases, submitters might only have clinical, phenotypic, or biospecimen annotations to upload and may not have data files per se.  That's OK!
+
+Here's an example uploading a bunch of cram files to a direcotry in the [example Synapse Project](https://www.synapse.org/#!Synapse:syn52171867/files/):
+
+<img width="1256" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/4c2350a2-3ec4-4180-9c7a-3e8c7de9e66b">
+<img width="1256" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/ead72cf4-0c15-417e-9002-2f7389891b33">
+
+_In the rest of the demo below I'm going to upload biospecimen annotations, so I won't use these files.  But I wanted to show you how this is done._
+
 ## Submit and Validate Data via DCA
 
-https://dca.app.sagebionetworks.org/
+The [Data Curator App (DCA)](https://dca.app.sagebionetworks.org/) is a tool developed at Sage to ensure that data submitted for a project like INCLUDE complies with the data model developed for the project.  More simply, it's making sure people don't forget to fill in required columns for the information they're submitted to INCLUDE.
 
 <img width="1432" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/91cdcda3-b5a7-410f-a3cd-34329207e93a">
 
@@ -86,3 +88,17 @@ And you can see the manifest stored on Synapse:
 
 <img width="1430" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/57923fe2-d473-4230-ac5f-1f5dfec89cb4">
 
+## Live Demo Instructions
+
+* Open Synapse and show the [INCLUDE Test Project C](https://www.synapse.org/#!Synapse:syn52171867/files/) - which can represent an INCLUDE Contributor site 
+* Navigate to DCA ([this is the production instance](https://dca.app.sagebionetworks.org/))
+* Within DCA use the DCA Demo DCC - this is equivalent to an INCLUDE DCC Hub 
+* Select the INCLUDE Test Project C 
+* Find the Biospecimen_Heart folder - it should be empty.  
+* Select the Biospecimen Template
+* Download - and in here you add a few lines of metadata - you can start with a blank space in the Tissue Status column (see screen shot) to show an error during validation
+* Download as a CSV
+* Navigate back to DCA - browse and upload the CSV you just saved
+* Click Validate - show the error that you get.  
+* Navigate back to the Google sheet and correct the error, save as CSV, upload, validate and submit.
+* At this point you can go back to the Synapse project and show that the CVS has been submitted.  
