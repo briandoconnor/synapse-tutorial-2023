@@ -1,5 +1,20 @@
 # Demo: INCLUDE DCC Submission
 
+## Demo Instructions
+
+* Open Synapse and show the [INCLUDE Test Project C](https://www.synapse.org/#!Synapse:syn52171867/files/) - which can represent an INCLUDE Contributor site 
+* Navigate to DCA ([this is the production instance](https://dca.app.sagebionetworks.org/))
+* Within DCA use the DCA Demo DCC - this is equivalent to an INCLUDE DCC Hub 
+* Select the INCLUDE Test Project C 
+* Find the Biospecimen_Heart folder - it should be empty.  
+* Select the Biospecimen Template
+* Download - and in here you add a few lines of metadata - you can start with a blank space in the Tissue Status column (see screen shot) to show an error during validation
+* Download as a CSV
+* Navigate back to DCA - browse and upload the CSV you just saved
+* Click Validate - show the error that you get.  
+* Navigate back to the Google sheet and correct the error, save as CSV, upload, validate and submit.
+* At this point you can go back to the Synapse project and show that the CVS has been submitted.  
+
 ## Submitter Instructions
 
 ## Submitter Synapse Project
@@ -10,7 +25,7 @@ Here's an [example Synapse Project](https://www.synapse.org/#!Synapse:syn5217186
 
 ## Upload Data 
 
-## Got to DCA
+## Submit and Validate Data via DCA
 
 https://dca.app.sagebionetworks.org/
 
@@ -67,4 +82,7 @@ And you get a success message along with a link to where in Synapse the file was
 
 <img width="1430" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/92ff6b25-f154-49a5-a4c5-f02b622d935a">
 
+And you can see the manifest stored on Synapse:
+
+<img width="1430" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/57923fe2-d473-4230-ac5f-1f5dfec89cb4">
 
