@@ -89,6 +89,15 @@ And you can see the manifest stored on Synapse:
 
 <img width="1430" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/57923fe2-d473-4230-ac5f-1f5dfec89cb4">
 
+##Data Release to Portal
+
+And that's really it for you!  Behind the scenes the INCLUDE team takes these submitted and validated files, transforms them to FHIR (a data exchange standard), and populates the portal on a regular basis.
+
+Not every field that is submitted is currently in the portal but, over time, we will add more and more data to the portal.
+
+<img width="1256" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/d9970fe0-d261-4a5f-94e9-7292784a221a">
+
+
 ## Live Demo Instructions
 
 * Open Synapse and show the [INCLUDE Test Project C](https://www.synapse.org/#!Synapse:syn52171867/files/) - which can represent an INCLUDE Contributor site 
