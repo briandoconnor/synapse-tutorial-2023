@@ -1,2 +1,0 @@
-## INCLUDE DCC Submission Example
-
