@@ -20,7 +20,7 @@ Here's an [example Synapse Project](https://www.synapse.org/#!Synapse:syn5217186
 
 The process of submitting starts with uploading data files to your Synapse Project.  This includes files like RNASeq, WGS, etc, whatever data files you will ultimately be submitting to the project.  In some cases, submitters might only have clinical, phenotypic, or biospecimen annotations to upload and may not have data files per se.  That's OK!
 
-Also, if you are submitting a bunch of files, very large files, or need to transfer from a cloud VM, we recommend you use the Synapse command line or Python/R client library.  See [tutorial-2.md] for much more info on this.
+Also, if you are submitting a bunch of files, very large files, or need to transfer from a cloud VM, we recommend you use the Synapse command line or Python/R client library.  See [tutorial-2.md](tutorial-2.md) for much more info on this.
 
 Here's an example uploading a bunch of cram files to a direcotry in the [example Synapse Project](https://www.synapse.org/#!Synapse:syn52171867/files/):
 
