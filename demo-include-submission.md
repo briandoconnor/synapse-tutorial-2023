@@ -1,6 +1,6 @@
 # Demo: INCLUDE DCC Submission
 
-This demo walks you through the process that data submitters to the [INCLUDE DCC](http://includedcc.org) follow in order to share data through the portal.  The goal is to give you an overview of the process, we'll work with you directly when it comes time to submit your data to INCLUDE.  [Contact us](https://app.smartsheet.com/b/form/514745159a004c2e987fff0aa16ceaac) to learn more!
+This demo walks you through the process that data submitters to the [INCLUDE DCC](http://includedcc.org) follow in order to share data through the portal.  The goal is to give you an overview of the process, we'll work with you directly when it comes time to submit your data to INCLUDE.  [Contact us](https://app.smartsheet.com/b/form/514745159a004c2e987fff0aa16ceaac) to learn more!  
 
 ## Submitter Instructions
 
@@ -16,13 +16,13 @@ Here's an [example Synapse Project](https://www.synapse.org/#!Synapse:syn5217186
 
 <img width="1432" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/0b73c14a-cc5d-4153-b433-2188b49ba0d1">
 
-## Upload Data 
+## Upload Data
 
 The process of submitting starts with uploading data files to your Synapse Project.  This includes files like RNASeq, WGS, etc, whatever data files you will ultimately be submitting to the project.  In some cases, submitters might only have clinical, phenotypic, or biospecimen annotations to upload and may not have data files per se.  That's OK!
 
 Also, if you are submitting a bunch of files, very large files, or need to transfer from a cloud VM, we recommend you use the Synapse command line or Python/R client library.  See [tutorial-2.md](tutorial-2.md) for much more info on this.
 
-Here's an example uploading a bunch of cram files to a direcotry in the [example Synapse Project](https://www.synapse.org/#!Synapse:syn52171867/files/):
+Here's an example uploading a bunch of cram files to a directory in the [example Synapse Project](https://www.synapse.org/#!Synapse:syn52171867/files/):
 
 <img width="1256" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/4c2350a2-3ec4-4180-9c7a-3e8c7de9e66b">
 <img width="1256" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/ead72cf4-0c15-417e-9002-2f7389891b33">
@@ -71,7 +71,7 @@ I'll correct the error and redownload as CSV:
 
 <img width="452" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/94eb2bfd-6a00-4983-aba7-80586f035fb2">
 
-Now I'll reupload to DCA and click the validate button again:
+Now I'll re-upload to DCA and click the validate button again:
 
 <img width="1430" alt="image" src="https://github.com/briandoconnor/synapse-tutorial-2023/assets/1730584/84d8b551-de8e-4836-9f51-e1ebfdec9bbc">
 
@@ -100,10 +100,10 @@ Not every field that is submitted is currently in the portal but, over time, we 
 
 ## Live Demo Instructions
 
-* Open Synapse and show the [INCLUDE Test Project C](https://www.synapse.org/#!Synapse:syn52171867/files/) - which can represent an INCLUDE Contributor site 
+* Open Synapse and show the [INCLUDE Test Project C](https://www.synapse.org/#!Synapse:syn52171867/files/) - which can represent an INCLUDE Contributor site
 * Navigate to DCA ([this is the production instance](https://dca.app.sagebionetworks.org/))
-* Within DCA use the DCA Demo DCC - this is equivalent to an INCLUDE DCC Hub 
-* Select the INCLUDE Test Project C 
+* Within DCA use the DCA Demo DCC - this is equivalent to an INCLUDE DCC Hub
+* Select the INCLUDE Test Project C
 * Find the Biospecimen_Heart folder - it should be empty.  
 * Select the Biospecimen Template
 * Download - and in here you add a few lines of metadata - you can start with a blank space in the Tissue Status column (see screen shot) to show an error during validation
